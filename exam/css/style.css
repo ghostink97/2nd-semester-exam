@@ -1,10 +1,61 @@
 /*Mobile view*/
+.cv{
+    text-align: center;
+    margin-top: 25px;
+}
+.cvsub{
+    margin-left: 23px;
+}
+
+section{
+    padding: 8px;
+    margin-bottom: 20px;
+
+    }
 
 
 /*Tablet view*/
 @media all and (min-width:520px) {
+
+section{
+
+    margin-left: 15px;
+    margin-right: 16px;
+
+}
 }
 
 /*Desktop view*/
 @media all and (min-width:995px) {
+
+    .cvmain{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "h1-area h1-area"
+        "section-area1 section-area2";
+    }
+
+    .cvmain h1{
+        grid-area: h1-area;
+    }
+
+    .cvmain .section-area1{
+        grid-area: section-area1;
+    }
+
+    .cvmain .section-area2{
+        grid-area: section-area2;
+    }
+
+    section{
+
+    margin-left: 30px;
+    margin-left: 25px;
+
+
+
+}
+
+
 }
