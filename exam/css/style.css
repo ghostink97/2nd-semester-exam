@@ -1,4 +1,6 @@
 /*Mobile view*/
+
+
 .cv{
     text-align: center;
     margin-top: 25px;
@@ -14,6 +16,30 @@ section{
     }
 
 
+
+/*The style for the lectures page*/
+.lectures{
+    text-align: center;
+    margin-top: 25px;
+}
+
+
+.lecturestext{
+    padding: 16px;
+}
+
+#birdwoman {
+    content: url(birdwoman.jpg);
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+
+}
+
+
+
 /*Tablet view*/
 @media all and (min-width:520px) {
 
@@ -23,6 +49,10 @@ section{
     margin-right: 16px;
 
 }
+
+    #birdwoman{
+        width: 50%;
+    }
 }
 
 /*Desktop view*/
@@ -52,10 +82,19 @@ section{
 
     margin-left: 30px;
     margin-left: 25px;
-
-
-
 }
+
+    .lecturestext{
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
+    #birdwoman{
+        width: 30%;
+        margin-top: 1em;
+        margin-bottom: 3em;
+    }
+
 
 
 }
