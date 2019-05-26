@@ -16,6 +16,7 @@ section{
     }
 
 
+
 /*The style for the lectures page*/
 .lectures{
     text-align: center;
@@ -83,8 +84,14 @@ section{
     margin-left: 25px;
 }
 
+    .lecturestext{
+    margin-right: 90px;
+    margin-left: 90px;
+}
+
     #birdwoman{
         width: 30%;
+        margin-top: 1em;
         margin-bottom: 3em;
     }
 
