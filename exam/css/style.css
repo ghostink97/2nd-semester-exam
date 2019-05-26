@@ -1,6 +1,6 @@
 /*Mobile view*/
 
-
+/*The style for the cv page*/
 .cv{
     text-align: center;
     margin-top: 25px;
@@ -38,6 +38,26 @@ section{
 
 }
 
+/*The style for the bio page*/
+.bio{
+    text-align: center;
+    margin-top: 25px;
+}
+
+.bioImage{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+.biotext1 {
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: 40px;
+}
 
 
 /*Tablet view*/
@@ -50,9 +70,21 @@ section{
 
 }
 
-    #birdwoman{
+#birdwoman{
         width: 50%;
     }
+
+.bioImage{
+        width: 50%;
+    }
+
+.biotext1 {
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 15px;
+
+    }
+
 }
 
 /*Desktop view*/
@@ -94,6 +126,39 @@ section{
         margin-top: 1em;
         margin-bottom: 3em;
     }
+
+
+    .wrapper{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        justify-content: center;
+        justify-items:center;
+
+
+    }
+
+    .bioImage{
+        grid-row: 2;
+        place-self: center;
+        margin-top:7em;
+        margin-right: 10em;
+
+
+
+
+    }
+
+    .biotext1{
+        grid-row: 1;
+        place-self: center;
+        margin-top:7em;
+        margin-left: 10em;
+        font-size: 19px;
+
+    }
+
+
+
 
 
 
