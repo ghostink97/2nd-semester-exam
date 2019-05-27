@@ -1,7 +1,7 @@
 /*Mobile view*/
 
 /*The style for the cv page*/
-.cv{
+.cv,.lectures,.bio,.exhibitions{
     text-align: center;
     margin-top: 25px;
 }
@@ -18,10 +18,7 @@ section{
 
 
 /*The style for the lectures page*/
-.lectures{
-    text-align: center;
-    margin-top: 25px;
-}
+
 
 
 .lecturestext{
@@ -39,10 +36,7 @@ section{
 }
 
 /*The style for the bio page*/
-.bio{
-    text-align: center;
-    margin-top: 25px;
-}
+
 
 .bioImage{
     width: 60%;
@@ -58,6 +52,19 @@ section{
     margin-left: 16px;
     margin-bottom: 40px;
 }
+
+
+
+/*The style for the exhibitions page*/
+
+.exhibitionsText1, .exhibitionsText2{
+    padding: 25px;
+}
+
+
+
+
+
 
 
 /*Tablet view*/
@@ -84,6 +91,12 @@ section{
     margin-bottom: 15px;
 
     }
+
+.exhibitionsText1, .exhibitionsText2{
+    padding: 35px;
+}
+
+
 
 }
 
@@ -157,7 +170,9 @@ section{
 
     }
 
-
+.exhibitionsText1, .exhibitionsText2{
+    padding: 55px;
+}
 
 
 
