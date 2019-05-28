@@ -26,7 +26,6 @@ section{
 }
 
 #birdwoman {
-    content: url(birdwoman.jpg);
     width: 60%;
     display: block;
     margin-left: auto;
