@@ -1,3 +1,272 @@
+/* /////// Overall layout /////// */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+     font-family: Helvetica, sans-serif;
+
+}
+
+/* /// Button go to top // */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 31px;
+    right: 8px;
+    z-index: 10;
+    font-size: 13px;
+    border: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4.1px;
+}
+
+#topBtn:hover {
+    background-color: rgba(0, 0, 0, 0.67);
+    box-shadow: 4px 8px 13px #4a4a4a;
+}
+
+/* ///////////// Navigation ////////////// */
+
+ .desktop-hid{
+     display: none;
+}
+
+/* /// Naviagation - desktop /// */
+
+#desktop-nav {
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+#desktop-nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+#desktop-nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 14px 16px;
+}
+
+#desktop-nav a#shop {
+    background-color: red;
+    color: white;
+}
+
+#desktop-nav a#shop:hover {
+    background-color: rgba(0, 0, 0, 0.78);
+    color: white;
+}
+
+#desktop-nav a:hover {
+    background-color: orange;
+    color: white;
+    transition: all 1.5s;
+}
+
+.menu-li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 40px;
+}
+
+.dropdown-menu-ul {
+    position: absolute;
+    top: 47px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu-li {
+    background-color: #f9f9f9;
+    display: none;
+    min-width: 145px;
+    z-index: 1;
+}
+
+.dropdown-menu-li a {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.menu-li:hover .dropdown-menu-li {
+    display: block;
+}
+
+/* ///////// Index page ////////// */
+
+#firstpage {
+    background-image: url(../images/css-images/img.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#name {
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 240px;
+}
+
+#job {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 10;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#enterBtn {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: double;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#enterBtn:hover{
+    box-shadow:  3px 3px 5px 0px #ccc;
+    cursor: pointer;
+}
+
+#enterBtn-a{
+    text-decoration: none;
+}
+
+/* Social media icons */
+
+#media {
+    margin-top: 85px;
+    text-align: center;
+}
+
+#media img {
+    width: 15px;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#media #fb-icon {
+    width: 10.5px;
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 720px) {
+
+    .desktop-hid{
+        display: none;
+    }
+}
+
+@media all and (min-width:320px) {
+
+    #media {
+        margin-top: 180px;
+    }
+}
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+
+    #name {
+        font-size: 45px;
+        padding-top: 250px;
+    }
+
+    #job {
+        font-size: 25px;
+    }
+
+    #media {
+        margin-top: 145px;
+    }
+}
+
+
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+
+ .desktop-hid{
+        display: block;
+    }
+
+    #name {
+        font-size: 55px;
+        padding-top: 250px;
+    }
+
+    #job {
+        font-size: 30px;
+    }
+
+    #enterBtn {
+        padding: 13px;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 25px;
+    }
+
+    #media {
+        margin-top: 130px;
+    }
+}
+
+
+@media all and (min-width:1280px) {
+
+     .desktop-hid{
+         display: block;
+    }
+
+    #name {
+        font-size: 65px;
+    }
+
+    #enterBtn {
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+
+    #media {
+        margin-top: 100px;
+    }
+}
+
+
+
+
+
+
 /*Mobile view*/
 
 /*The style for the cv page*/
