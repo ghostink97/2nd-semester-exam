@@ -5,12 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lene Stevns Jensen | CV</title>
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <header>
+        <!--------- The Navigation - Mobile and Tablet version  --------->
+
+        <!-- Inspired by www.w3schools.com ; Link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
+
+        <!-- Hamburger menu  -->
+        <span id="hamburger-menu" onclick="openMobileNav()">&#9776; </span>
+
+        <!-- Home icon + link - back home  -->
+        <a href="index.html"> <img id="home-btn" src="images/css-images/house.png" alt="house-button -go to the home page"> </a>
+
+        <!-- Navigation line  -->
+        <div id="line"></div>
+
+        <!-- The whole menu + close btn  -->
+        <div id="mobileNav" class="container">
+            <a href="#" id="closebtnMobile" onclick="closeMobileNav()">&times;</a>
+
+ <!-- The container for navigation   -->
+            <div id="mobile-nav" class="container-content">
+                <ul>
+                    <li><a href="home.html">News</a></li>
+
+                    <li class="sub-menu">
+                        <a href="#">Artwork <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu-ul-Mobile">
+                            <li class="dropdown-menu-li-Mobile"> <a href="sculptures.html">Sculptures</a></li>
+                            <li class="dropdown-menu-li-Mobile"> <a href="jewelry.html">Jewellery</a></li>
+                            <li class="dropdown-menu-li-Mobile"> <a href="vessels.html">Vessels</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="sub-menu">
+                        <a href="#">Info <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu-ul-Mobile">
+                            <li class="dropdown-menu-li-Mobile"> <a href="bio.html">About me</a></li>
+                            <li class="dropdown-menu-li-Mobile"> <a href="cv.html">CV</a></li>
+                            <li class="dropdown-menu-li-Mobile"> <a href="exhibitions.html">Exhibitions</a>
+                            <li class="dropdown-menu-li-Mobile"> <a href="lectures.html">Lectures</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a id="shopM" href="#">Shop</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+
         <!-- The Navigation -Desktop version  -->
 
         <!-- Inspired by a video from youtube. Link: https://www.youtube.com/watch?v=zguFq71ZR4Y -->
@@ -18,7 +66,7 @@
         <nav class="desktop-hide" id="desktop-nav">
 
             <ul>
-                <li class="menu-li"><a href="index.html">Home</a></li>
+                <li class="menu-li"><a href="index.html"><img id="home-btn-desktop" src="images/css-images/house.png" alt="house button - go to the home page"></a></li>
 
                 <li class="menu-li"><a href="home.html">News</a></li>
 
@@ -46,117 +94,117 @@
         </nav>
 
     </header>
-    
+
     <main class="cvmain">
 
-    <h1 class="cv">CV</h1>
+        <h1 class="cv">CV</h1>
 
-    <!--paragraph one-->
-    <section class="sectionarea1">
+        <!--paragraph one-->
+        <section class="sectionarea1">
 
-    <h2 class="cvsub">Artist In Residence And Stays Abroad</h2>
+            <h2 class="cvsub">Artist In Residence And Stays Abroad</h2>
 
-    <ul class="text1">
-     <li>1989 Guest at The Central Academy of Arts and Design, Beijing, China.</li>
-     <li>1992 Guest at The University of Fairbanks, Alaska.</li>
-     <li>1999 Exhibition and stay in Seattle, USA.</li>
-     <li>2002 Exhibition and stay in Skopje, Macedonia.</li>
-     <li>2003 Stay and exhibition at The Banff Centre of Arts in Canada.</li>
-     <li>2006 Invited to join The 2006 China Yunnan International Folk Arts and Crafts High-Level Forum and Nationality Folk Arts and Crafts Exhibition.</li>
-     <li>2010 Stay at The Danish Institute in Damascus, Syria.</li>
-     <li>2012 Stay as an Artist in Residence at Svalbard, Jan Mayen.</li>
-     <li>2018 Artist in Residence at The Ou Gallery, Duncan, Vancouver Island, Canada.</li>
-    </ul>
+            <ul class="text1">
+                <li>1989 Guest at The Central Academy of Arts and Design, Beijing, China.</li>
+                <li>1992 Guest at The University of Fairbanks, Alaska.</li>
+                <li>1999 Exhibition and stay in Seattle, USA.</li>
+                <li>2002 Exhibition and stay in Skopje, Macedonia.</li>
+                <li>2003 Stay and exhibition at The Banff Centre of Arts in Canada.</li>
+                <li>2006 Invited to join The 2006 China Yunnan International Folk Arts and Crafts High-Level Forum and Nationality Folk Arts and Crafts Exhibition.</li>
+                <li>2010 Stay at The Danish Institute in Damascus, Syria.</li>
+                <li>2012 Stay as an Artist in Residence at Svalbard, Jan Mayen.</li>
+                <li>2018 Artist in Residence at The Ou Gallery, Duncan, Vancouver Island, Canada.</li>
+            </ul>
 
-</section>
-
-
-    <!--paragraph two-->
-    <section class="sectionarea2">
-
-    <h2 class="cvsub">Exhibitions Abroad</h2>
-
-    <ul class="text2">
-      <li>1997 Exhibition at The Danish Central Library in Flensborg, Germany.</li>
-      <li>1999 Exhibition at The Nordic Heritage Museum in Seattle, USA.</li>
-      <li>2002 Exhibition in Skopje, Macedonia.</li>
-      <li>2003 Exhibition at The Other Gallery in Banff, Canada.</li>
-      <li>2006 Exhibition at Yunnan Hanrongxuan Culture and Art Museum.</li>
-      <li>2011 Exhibition at Gallery Frida, Kyrkhult, Sweeden.</li>
-    </ul>
-
-</section>
-
-   <!--paragraph three-->
-    <section class="sectionarea3">
-
-    <h2 class="cvsub">Latest Exhibitions In Denmark</h2>
-
-    <ul class="text3">
-     <li>2010 The Sculpture Biennale in The King's Garden, Copenhagen. The Johannes Larsen Muesum in Kerteminde.</li>
-     <li>2011 Palæfløjen, Roskilde.</li>
-     <li>2012 The Sculpture Biennale at The King's Garden, Copenhagen. International Art Festival, Kerteminde.</li>
-     <li>2013 The Copenhagen Zoo. Poesi of the Elements, Ølgod. Æglageret, Holbæk.</li>
-     <li>2014 Gimsinghoved. Augustiana Sculpture Park. Dronninglund Art Centre.</li>
-     <li>2015 Kirsten Kjær Museum. Sculpture exhibition, Ølgod</li>
-     <li>2016 Kirkehavegaard. Gallery North. Birkelundgaard. Banegaarden, Aabenraa</li>
-     <li>2017 Sculpture exhibition, Galten. Copenhagen Town Hall. Brøndsalen, Frederiksberg. Farum Culture House.</li>
-     <li>2018 Det ny Kastet, Thisted. Dronninglund Kunstcenter. Agger Skulpturbiennale. Brøndsalen, Frederiksberg.</li>
-
-    </ul>
-
-</section>
-
-  <!--paragraph four-->
-    <section class="sectionarea4">
-
-    <h2 class="cvsub">Grants</h2>
-
-    <ul class="text4">
-     <li>The Daloon Foundation 1989, 1994</li>
-     <li>The Knud Højgaard Foundation 1992, 2003, 2010, 2013</li>
-     <li>The Gottfred and Gerda Eickhoff Foundation 1999, 2002</li>
-     <li>Counsul Georg Jorck and Emma Jorck's Foundation 1999, 2002</li>
-     <li>Politiken Foundation 1999, 2001</li>
-     <li>Nationalbankens Jubilæumsfond 2000</li>
-     <li>Frederik og Emma Kraghs Mindefond 2016</li>
-     <li>Anna E. Munchs Legat 2017</li>
+        </section>
 
 
-    </ul>
+        <!--paragraph two-->
+        <section class="sectionarea2">
 
-</section>
+            <h2 class="cvsub">Exhibitions Abroad</h2>
 
-  <!--paragraph five-->
-    <section class="sectionarea5">
+            <ul class="text2">
+                <li>1997 Exhibition at The Danish Central Library in Flensborg, Germany.</li>
+                <li>1999 Exhibition at The Nordic Heritage Museum in Seattle, USA.</li>
+                <li>2002 Exhibition in Skopje, Macedonia.</li>
+                <li>2003 Exhibition at The Other Gallery in Banff, Canada.</li>
+                <li>2006 Exhibition at Yunnan Hanrongxuan Culture and Art Museum.</li>
+                <li>2011 Exhibition at Gallery Frida, Kyrkhult, Sweeden.</li>
+            </ul>
 
-    <h2 class="cvsub">Memberships</h2>
+        </section>
 
-    <ul class="text5">
-     <li>Member of BKF - Visual Artists' Assosiation</li>
-     <li>Member of KKS - Danish Women's Artist Assosiation</li>
-     <li>Member of DBS - Danish Sculptors' Society</li>
-     <li>Member of the group Animal Life</li>
-     <li>Member of the group TEAM-ART</li>
-     <li>Member of VAK - The Art Workshops of West Zealand</li>
+        <!--paragraph three-->
+        <section class="sectionarea3">
+
+            <h2 class="cvsub">Latest Exhibitions In Denmark</h2>
+
+            <ul class="text3">
+                <li>2010 The Sculpture Biennale in The King's Garden, Copenhagen. The Johannes Larsen Muesum in Kerteminde.</li>
+                <li>2011 Palæfløjen, Roskilde.</li>
+                <li>2012 The Sculpture Biennale at The King's Garden, Copenhagen. International Art Festival, Kerteminde.</li>
+                <li>2013 The Copenhagen Zoo. Poesi of the Elements, Ølgod. Æglageret, Holbæk.</li>
+                <li>2014 Gimsinghoved. Augustiana Sculpture Park. Dronninglund Art Centre.</li>
+                <li>2015 Kirsten Kjær Museum. Sculpture exhibition, Ølgod</li>
+                <li>2016 Kirkehavegaard. Gallery North. Birkelundgaard. Banegaarden, Aabenraa</li>
+                <li>2017 Sculpture exhibition, Galten. Copenhagen Town Hall. Brøndsalen, Frederiksberg. Farum Culture House.</li>
+                <li>2018 Det ny Kastet, Thisted. Dronninglund Kunstcenter. Agger Skulpturbiennale. Brøndsalen, Frederiksberg.</li>
+
+            </ul>
+
+        </section>
+
+        <!--paragraph four-->
+        <section class="sectionarea4">
+
+            <h2 class="cvsub">Grants</h2>
+
+            <ul class="text4">
+                <li>The Daloon Foundation 1989, 1994</li>
+                <li>The Knud Højgaard Foundation 1992, 2003, 2010, 2013</li>
+                <li>The Gottfred and Gerda Eickhoff Foundation 1999, 2002</li>
+                <li>Counsul Georg Jorck and Emma Jorck's Foundation 1999, 2002</li>
+                <li>Politiken Foundation 1999, 2001</li>
+                <li>Nationalbankens Jubilæumsfond 2000</li>
+                <li>Frederik og Emma Kraghs Mindefond 2016</li>
+                <li>Anna E. Munchs Legat 2017</li>
 
 
-    </ul>
+            </ul>
 
-</section>
+        </section>
+
+        <!--paragraph five-->
+        <section class="sectionarea5">
+
+            <h2 class="cvsub">Memberships</h2>
+
+            <ul class="text5">
+                <li>Member of BKF - Visual Artists' Assosiation</li>
+                <li>Member of KKS - Danish Women's Artist Assosiation</li>
+                <li>Member of DBS - Danish Sculptors' Society</li>
+                <li>Member of the group Animal Life</li>
+                <li>Member of the group TEAM-ART</li>
+                <li>Member of VAK - The Art Workshops of West Zealand</li>
+
+
+            </ul>
+
+        </section>
 
 
 
-            <!-- Go to top (button) -->
-             <!-- Used in previous projects -->
-            <button onclick="btnTopFunction()" id="topBtn" title="Go to top">Top</button>
-    
+        <!-- Go to top (button) -->
+        <!-- Used in previous projects -->
+        <button onclick="btnTopFunction()" id="topBtn" title="Go to top">Top</button>
+
     </main>
 
     <footer>
-        
+
     </footer>
-    
+
     <script src="js/script.js"></script>
 </body>
 </html>

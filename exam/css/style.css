@@ -8,7 +8,7 @@
 body,
 html {
     height: 100%;
-     font-family: Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 
 }
 
@@ -35,414 +35,529 @@ html {
 
 /* ///////////// Navigation ////////////// */
 
- .desktop-hid{
-     display: none;
-}
-
-/* /// Naviagation - desktop /// */
-
-#desktop-nav {
-    background-color: white;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    box-shadow: 0 4px 2px -2px gray;
-}
-
-#desktop-nav ul {
-    list-style: none;
-    text-align: center;
-}
-
-#desktop-nav a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 14px 16px;
-}
-
-#desktop-nav a#shop {
-    background-color: red;
-    color: white;
-}
-
-#desktop-nav a#shop:hover {
-    background-color: rgba(0, 0, 0, 0.78);
-    color: white;
-}
-
-#desktop-nav a:hover {
-    background-color: orange;
-    color: white;
-    transition: all 1.5s;
-}
-
-.menu-li {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    padding-left: 40px;
-}
-
-.dropdown-menu-ul {
-    position: absolute;
-    top: 47px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-}
-
-.dropdown-menu-li {
-    background-color: #f9f9f9;
+.desktop-hide {
     display: none;
-    min-width: 145px;
-    z-index: 1;
 }
 
-.dropdown-menu-li a {
-    color: black;
-    padding: 12px 16px;
-    text-align: left;
+
+/* /// Naviagation - mobile and tablet /// */
+
+#hamburger-menu {
+    font-size: 31px;
+    cursor: pointer;
 }
 
-.menu-li:hover .dropdown-menu-li {
-    display: block;
+#home-btn {
+    width: 25px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
-/* ///////// Index page ////////// */
-
-#firstpage {
-    background-image: url(../images/css-images/img.png);
-    height: 100%;
+#line {
+    box-shadow: 0 4px 2px -2px grey;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: 10px;
 }
 
-#name {
-    color: white;
-    font-family: 'Great Vibes', cursive;
-    font-size: 35px;
-    text-align: center;
-    padding-top: 240px;
+.container {
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: 0.51s;
+    overflow: hidden;
+    width: 0;
+
 }
 
-#job {
-    color: white;
-    font-family: Helvetica, sans-serif;
-    font-weight: 10;
-    font-size: 20px;
-    text-align: center;
+.container-content {
+    position: relative;
+    top: 22%;
+    text-align: left;
+    margin-left: 30px;
+
 }
 
-
-#enterBtn {
-    background-color: transparent;
-    text-transform: uppercase;
-    color: white;
-    padding: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: double;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 5px;
-}
-
-#enterBtn:hover{
-    box-shadow:  3px 3px 5px 0px #ccc;
-    cursor: pointer;
-}
-
-#enterBtn-a{
+.container a {
+    padding: 8px;
     text-decoration: none;
+    font-size: 25px;
+    color: #dedede;
+    display: block;
+    transition: 0.31s;
 }
 
-/* Social media icons */
-
-#media {
-    margin-top: 85px;
-    text-align: center;
+.container a:hover {
+    color: orange;
 }
 
-#media img {
-    width: 15px;
-    display: inline-block;
-    margin-left: 5px;
-    cursor: pointer;
+.container #closebtnMobile {
+    position: absolute;
+    top: 18px;
+    right: 43px;
+    font-size: 50px;
 }
 
-#media #fb-icon {
-    width: 10.5px;
+#mobile-nav ul li {
+    list-style: none;
+    position: relative;
 }
 
+#mobile-nav ul li.sub-menu:before {
+    content: '\f0d7';
+    position: absolute;
+    line-height: 50px;
+    color: red
+}
+
+#mobile-nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+}
+
+#mobile-nav ul li.active ul {
+    display: block;
+}
+
+#mobile-nav ul li ul li {
+    display: block;
+    width: 200px;
 
 
-@media only screen and (min-width: 300px) and (max-width: 720px) {
 
-    .desktop-hid{
+    /* /// Naviagation - desktop /// */
+
+    #desktop-nav {
+        background-color: white;
+        font-family: Helvetica, sans-serif;
+        font-size: 16px;
+        box-shadow: 0 4px 2px -2px gray;
+    }
+
+    #desktop-nav ul {
+        list-style: none;
+        text-align: center;
+    }
+
+    #desktop-nav a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 14px 16px;
+    }
+
+    #desktop-nav a#shop {
+        background-color: red;
+        color: white;
+    }
+
+
+    #desktop-nav a#shop:hover {
+        background-color: rgba(0, 0, 0, 0.78);
+        color: white;
+    }
+
+    #desktop-nav a:hover {
+        background-color: orange;
+        color: white;
+        transition: all 1.5s;
+    }
+
+    .menu-li {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        padding-left: 40px;
+    }
+
+    .dropdown-menu-ul {
+        position: absolute;
+        top: 47px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .dropdown-menu-li {
+        background-color: #f9f9f9;
         display: none;
-    }
-}
-
-@media all and (min-width:320px) {
-
-    #media {
-        margin-top: 180px;
-    }
-}
-
-
-
-@media only screen and (min-width: 480px) and (max-width: 720px) {
-
-    #name {
-        font-size: 45px;
-        padding-top: 250px;
+        min-width: 145px;
+        z-index: 1;
     }
 
-    #job {
-        font-size: 25px;
+    .dropdown-menu-li a {
+        color: black;
+        padding: 12px 16px;
+        text-align: left;
     }
 
-    #media {
-        margin-top: 145px;
-    }
-}
-
-
-
-@media only screen and (min-width: 720px) and (max-width: 1280px) {
-
- .desktop-hid{
+    .menu-li:hover .dropdown-menu-li {
         display: block;
     }
 
+    #home-btn-desktop {
+        width: 22px;
+
+
+
+    }
+
+    /* ///////// Index page ////////// */
+
+    #firstpage {
+        background-image: url(../images/css-images/img.png);
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
     #name {
-        font-size: 55px;
-        padding-top: 250px;
+        color: white;
+        font-family: 'Great Vibes', cursive;
+        font-size: 35px;
+        text-align: center;
+        padding-top: 240px;
     }
 
     #job {
-        font-size: 30px;
+        color: white;
+        font-family: Helvetica, sans-serif;
+        font-weight: 10;
+        font-size: 20px;
+        text-align: center;
     }
 
+
     #enterBtn {
-        padding: 13px;
-        padding-left: 18px;
-        padding-right: 18px;
+        background-color: transparent;
+        text-transform: uppercase;
+        color: white;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: double;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    }
+
+    #enterBtn:hover {
+        box-shadow: 3px 3px 5px 0px #ccc;
+        cursor: pointer;
+    }
+
+    #enterBtn-a {
+        text-decoration: none;
+    }
+
+    /* Social media icons */
+
+    #media {
+        margin-top: 85px;
+        text-align: center;
+    }
+
+    #media img {
+        width: 15px;
+        display: inline-block;
+        margin-left: 5px;
+        cursor: pointer;
+    }
+
+    #media #fb-icon {
+        width: 10.5px;
+    }
+
+
+
+    @media only screen and (min-width: 300px) and (max-width: 720px) {
+        .desktop-hide {
+            display: none;
+        }
+    }
+
+    @media all and (min-width:320px) {
+
+        #media {
+            margin-top: 180px;
+        }
+    }
+
+
+
+    @media only screen and (min-width: 480px) and (max-width: 720px) {
+        #name {
+            font-size: 45px;
+            padding-top: 250px;
+        }
+
+        #job {
+            font-size: 25px;
+        }
+
+        #media {
+            margin-top: 145px;
+        }
+    }
+
+
+
+    @media only screen and (min-width: 720px) and (max-width: 1280px) {
+
+        .desktop-hide {
+            display: block;
+        }
+
+        #hamburger-menu {
+            display: none;
+        }
+
+        #home-btn {
+            display: none;
+        }
+
+        #name {
+            font-size: 55px;
+            padding-top: 250px;
+        }
+
+        #job {
+            font-size: 30px;
+        }
+
+        #enterBtn {
+            padding: 13px;
+            padding-left: 18px;
+            padding-right: 18px;
+            margin-top: 25px;
+        }
+
+        #media {
+            margin-top: 130px;
+        }
+    }
+
+
+    @media all and (min-width:1280px) {
+
+        .desktop-hide {
+            display: block;
+        }
+
+        #hamburger-menu {
+            display: none;
+        }
+
+        #name {
+            font-size: 65px;
+        }
+
+        #enterBtn {
+            padding: 15px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 30px;
+        }
+
+        #media {
+            margin-top: 100px;
+        }
+    }
+
+
+
+
+
+
+    /*Mobile view*/
+
+    /*The style for the cv page*/
+    .cv,
+    .lectures,
+    .bio,
+    .exhibitions {
+        text-align: center;
         margin-top: 25px;
     }
 
-    #media {
-        margin-top: 130px;
-    }
-}
-
-
-@media all and (min-width:1280px) {
-
-     .desktop-hid{
-         display: block;
+    .cvsub {
+        margin-left: 23px;
     }
 
-    #name {
-        font-size: 65px;
-    }
-
-    #enterBtn {
-        padding: 15px;
-        padding-left: 20px;
-        padding-right: 20px;
-        margin-top: 30px;
-    }
-
-    #media {
-        margin-top: 100px;
-    }
-}
-
-
-
-
-
-
-/*Mobile view*/
-
-/*The style for the cv page*/
-.cv,.lectures,.bio,.exhibitions{
-    text-align: center;
-    margin-top: 25px;
-}
-.cvsub{
-    margin-left: 23px;
-}
-
-section{
-    padding: 8px;
-    margin-bottom: 20px;
+    section {
+        padding: 8px;
+        margin-bottom: 20px;
 
     }
 
 
 
-/*The style for the lectures page*/
+    /*The style for the lectures page*/
 
 
 
-.lecturestext{
-    padding: 16px;
-}
-
-#birdwoman {
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3em;
-
-}
-
-/*The style for the bio page*/
-
-
-.bioImage{
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 3em;
-    margin-top: 3em;
-}
-
-.biotext1 {
-    margin-right: 16px;
-    margin-left: 16px;
-    margin-bottom: 40px;
-}
-
-
-
-/*The style for the exhibitions page*/
-
-.exhibitionsText1, .exhibitionsText2{
-    padding: 25px;
-}
-
-
-
-
-
-
-
-/*Tablet view*/
-@media all and (min-width:520px) {
-
-section{
-
-    margin-left: 15px;
-    margin-right: 16px;
-
-}
-
-#birdwoman{
-        width: 50%;
+    .lecturestext {
+        padding: 16px;
     }
 
-.bioImage{
-        width: 50%;
-    }
-
-.biotext1 {
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 15px;
-
-    }
-
-.exhibitionsText1, .exhibitionsText2{
-    padding: 35px;
-}
-
-
-
-}
-
-/*Desktop view*/
-@media all and (min-width:995px) {
-
-    .cvmain{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "h1-area h1-area"
-        "section-area1 section-area2";
-    }
-
-    .cvmain h1{
-        grid-area: h1-area;
-    }
-
-    .cvmain .section-area1{
-        grid-area: section-area1;
-    }
-
-    .cvmain .section-area2{
-        grid-area: section-area2;
-    }
-
-    section{
-
-    margin-left: 30px;
-    margin-left: 25px;
-}
-
-    .lecturestext{
-    margin-right: 90px;
-    margin-left: 90px;
-}
-
-    #birdwoman{
-        width: 30%;
-        margin-top: 1em;
+    #birdwoman {
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 3em;
-    }
-
-
-    .wrapper{
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        justify-content: center;
-        justify-items:center;
-
 
     }
 
-    .bioImage{
-        grid-row: 2;
-        place-self: center;
-        margin-top:7em;
-        margin-right: 10em;
+    /*The style for the bio page*/
 
+
+    .bioImage {
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3em;
+        margin-top: 3em;
+    }
+
+    .biotext1 {
+        margin-right: 16px;
+        margin-left: 16px;
+        margin-bottom: 40px;
+    }
+
+
+
+    /*The style for the exhibitions page*/
+
+    .exhibitionsText1,
+    .exhibitionsText2 {
+        padding: 25px;
+    }
+
+
+
+
+
+
+
+    /*Tablet view*/
+    @media all and (min-width:520px) {
+
+        section {
+
+            margin-left: 15px;
+            margin-right: 16px;
+
+        }
+
+        #birdwoman {
+            width: 50%;
+        }
+
+        .bioImage {
+            width: 50%;
+        }
+
+        .biotext1 {
+            margin-left: 60px;
+            margin-right: 60px;
+            margin-bottom: 15px;
+
+        }
+
+        .exhibitionsText1,
+        .exhibitionsText2 {
+            padding: 35px;
+        }
 
 
 
     }
 
-    .biotext1{
-        grid-row: 1;
-        place-self: center;
-        margin-top:7em;
-        margin-left: 10em;
-        font-size: 19px;
+    /*Desktop view*/
+    @media all and (min-width:995px) {
+
+        .cvmain {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:
+                "h1-area h1-area"
+                "section-area1 section-area2";
+        }
+
+        .cvmain h1 {
+            grid-area: h1-area;
+        }
+
+        .cvmain .section-area1 {
+            grid-area: section-area1;
+        }
+
+        .cvmain .section-area2 {
+            grid-area: section-area2;
+        }
+
+        section {
+
+            margin-left: 30px;
+            margin-left: 25px;
+        }
+
+        .lecturestext {
+            margin-right: 90px;
+            margin-left: 90px;
+        }
+
+        #birdwoman {
+            width: 30%;
+            margin-top: 1em;
+            margin-bottom: 3em;
+        }
+
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            justify-items: center;
+
+
+        }
+
+        .bioImage {
+            grid-row: 2;
+            place-self: center;
+            margin-top: 7em;
+            margin-right: 10em;
+
+
+
+
+        }
+
+        .biotext1 {
+            grid-row: 1;
+            place-self: center;
+            margin-top: 7em;
+            margin-left: 10em;
+            font-size: 19px;
+
+        }
+
+        .exhibitionsText1,
+        .exhibitionsText2 {
+            padding: 55px;
+        }
+
+
+
 
     }
-
-.exhibitionsText1, .exhibitionsText2{
-    padding: 55px;
-}
-
-
-
-
-}

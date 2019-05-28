@@ -1,4 +1,16 @@
 // Used  in previous projects
+// Inspired by  www.w3schools.com
+
+function openMobileNav() {
+  document.getElementById("mobileNav").style.width = "100%";
+}
+
+function closeMobileNav() {
+  document.getElementById("mobileNav").style.width = "0%";
+}
+
+
+// Used  in previous projects
 // Scroll down more then 25px - see the button
 window.onscroll = function() {scroll()};
 
