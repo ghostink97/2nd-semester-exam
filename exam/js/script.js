@@ -1,3 +1,5 @@
+// Mobile navigation
+
 const mq = window.matchMedia("(max-width: 719px)");
 
 if(mq.matches) {
@@ -13,11 +15,6 @@ if(mq.matches) {
     }
 
 }
-
-
-
-
-
 
 
 // Used  in previous projects
