@@ -88,7 +88,7 @@ html {
     .container a {
         padding: 8px;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 22px;
         color: #dedede;
         display: block;
         transition: 0.31s;
@@ -127,10 +127,10 @@ html {
 /* /// Naviagation - desktop version /// */
 
 #desktop-nav {
-    background-color: white;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
-    box-shadow: 0 4px 2px -2px gray;
+    box-shadow: 0 3px 2px -2px gray;
+     background-image: white;
 }
 
 #desktop-nav ul {
@@ -352,6 +352,10 @@ html {
     }
 
     .container{
+        display: none;
+    }
+
+    home-btn{
         display: none;
     }
 
