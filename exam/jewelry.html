@@ -5,13 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lene Stevns Jensen | jewelry</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <header>
-        <nav class="menubar">
+       <!-- The Navigation -Desktop version  -->
 
+        <!-- Inspired by a video from youtube. Link: https://www.youtube.com/watch?v=zguFq71ZR4Y -->
+
+        <nav class="desktop-hide" id="desktop-nav">
+
+            <ul>
+                <li class="menu-li"><a href="index.html">Home</a></li>
+
+                <li class="menu-li"><a href="home.html">News</a></li>
+
+                <li class="menu-li">
+                    <a href="#">Artwork <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu-ul">
+                        <li class="dropdown-menu-li"> <a href="sculptures.html">Sculptures</a></li>
+                        <li class="dropdown-menu-li"> <a href="jewelry.html">Jewellery</a></li>
+                        <li class="dropdown-menu-li"> <a href="vessels.html">Vessels</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-li">
+                    <a href="#">Info <i class="fa fa-caret-down"></i></a>
+                    <ul class="dropdown-menu-ul">
+                        <li class="dropdown-menu-li"> <a href="bio.html">About me</a></li>
+                        <li class="dropdown-menu-li"> <a href="cv.html">CV</a></li>
+                        <li class="dropdown-menu-li"> <a href="exhibitions.html">Exhibitions</a></li>
+                        <li class="dropdown-menu-li"> <a href="lectures.html">Lectures</a></li>
+                    </ul>
+                </li>
+
+                <li id="shop" class="menu-li"> <a id="shop" href="#">Shop</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -28,7 +59,10 @@
 
         <!--The products are displayed using the template above-->
 
-        <button class="goTop"></button>
+
+            <!-- Go to top (button) -->
+             <!-- Used in previous projects -->
+            <button onclick="btnTopFunction()" id="topBtn" title="Go to top">Top</button>
     
     </main>
 
