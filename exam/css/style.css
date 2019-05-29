@@ -1,7 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&display=swap');
+
+/* /////// Overall layout /////// */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Helvetica, sans-serif;
+}
+
+/* /// Button go to top // */
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 31px;
+    right: 8px;
+    z-index: 10;
+    font-size: 13px;
+    border: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 4.1px;
+}
+
+#topBtn:hover {
+    background-color: rgba(0, 0, 0, 0.67);
+    box-shadow: 4px 8px 13px #4a4a4a;
+}
+
+/* /////////////// Navigation //////////////// */
+
+
+/* /// Naviagation - mobile and tablet /// */
+
+@media only screen and (min-width: 220px) and (max-width: 719px) {
+
+    .desktop-hide {
+        display: none;
+    }
+
+    #hamburger-menu {
+        font-size: 31px;
+        cursor: pointer;
+    }
+
+    #home-btn {
+        width: 25px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    #line {
+        box-shadow: 0 4px 2px -2px grey;
+        width: 100%;
+        height: 10px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .container {
+        height: 100%;
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: 0.51s;
+        overflow: hidden;
+        width: 0;
+    }
+
+    .container-content {
+        position: relative;
+        top: 22%;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    .container a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #dedede;
+        display: block;
+        transition: 0.31s;
+    }
+
+    .container a:hover {
+        color: orange;
+    }
+
+    .container #closebtnMobile {
+        position: absolute;
+        top: 18px;
+        right: 43px;
+        font-size: 50px;
+    }
+
+    .submenu-Mobile {
+        position: static;
+        width: 100%;
+    }
+
+    .submenu-Mobile a {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .submenu-Mobile li {
+        display: none;
+    }
+
+    .display-block > li {
+        display: block;
+    }
+}
+
+/* /// Naviagation - desktop version /// */
+
+#desktop-nav {
+    background-color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+#desktop-nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+#desktop-nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 14px 16px;
+}
+
+#desktop-nav a#shop {
+    background-color: #3330C2;
+    color: white;
+}
+
+#desktop-nav a#shop:hover {
+    background-color: rgba(0, 0, 0, 0.78);
+    color: white;
+}
+
+#desktop-nav a:hover {
+    background-color: orange;
+    color: white;
+    transition: all 1.5s;
+}
+
+.menu-li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-left: 40px;
+}
+
+.dropdown-menu-ul {
+    position: absolute;
+    top: 47px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu-li {
+    background-color: #f9f9f9;
+    display: none;
+    min-width: 145px;
+    z-index: 1;
+}
+
+.dropdown-menu-li a {
+    color: black;
+    padding: 12px 16px;
+    text-align: left;
+}
+
+.menu-li:hover .dropdown-menu-li {
+    display: block;
+}
+
+#home-btn-desktop {
+    width: 22px;
+}
+
+
+/* ///////// Index page ////////// */
+
+#firstpage {
+    background-image: url(../images/css-images/img.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#name {
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 240px;
+}
+
+#job {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: 10;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#enterBtn {
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: double;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#enterBtn:hover {
+    box-shadow: 3px 3px 5px 0px #ccc;
+    cursor: pointer;
+}
+
+#enterBtn-a {
+    text-decoration: none;
+}
+
+/* Social media icons */
+
+#media {
+    margin-top: 85px;
+    text-align: center;
+}
+
+#media img {
+    width: 15px;
+    display: inline-block;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#media #fb-icon {
+    width: 10.5px;
+}
+
+
+
+@media all and (min-width:220px) {
+
+    #media {
+        margin-top: 53px;
+    }
+}
+
+@media all and (min-width:360px) {
+
+    #media {
+        margin-top: 180px;
+    }
+    #name {
+        font-size: 45px;
+        padding-top: 290px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 720px) {
+    #name {
+        font-size: 45px;
+        padding-top: 250px;
+    }
+
+    #job {
+        font-size: 22px;
+    }
+
+    #media {
+        margin-top: 185px;
+    }
+}
+
+
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
+
+    .desktop-hide {
+        display: block;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+    .container{
+        display: none;
+    }
+
+    #home-btn {
+        display: none;
+    }
+
+    #name {
+        font-size: 55px;
+        padding-top: 300px;
+    }
+
+    #job {
+        font-size: 22px;
+    }
+
+    #enterBtn {
+        padding: 13px;
+        padding-left: 18px;
+        padding-right: 18px;
+        margin-top: 25px;
+    }
+
+    #media {
+        margin-top: 115px;
+    }
+}
+
+
+@media all and (min-width:1280px) {
+
+    .desktop-hide {
+        display: block;
+    }
+
+    #hamburger-menu {
+        display: none;
+    }
+
+    .container{
+        display: none;
+    }
+
+    #name {
+        font-size: 65px;
+        padding-top: 300px;
+    }
+
+    #enterBtn {
+        padding: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 30px;
+    }
+
+    #media {
+        margin-top: 100px;
+    }
+}
+
+
+
+
+
+
 /*Mobile view*/
 
 /*The style for the cv page*/
-.cv,.lectures,.bio,.exhibitions{
+.cv,
+.lectures,
+.bio,
+.exhibitions {
     text-align: center;
     margin-top: 25px;
     font-family: 'Great Vibes', cursive;
@@ -9,11 +391,12 @@
 }
 
 
-section{
+
+section {
     padding: 8px;
     margin-bottom: 20px;
 
-    }
+}
 
 
 
@@ -21,9 +404,7 @@ section{
 
 
 
-.lecturestext{
-    margin: auto;
-    width: 80%;
+
     padding: 16px;
     line-height: 30px;
     font-family: 'Helvetica';
@@ -42,7 +423,7 @@ section{
 /*The style for the bio page*/
 
 
-.bioImage{
+.bioImage {
     width: 60%;
     display: block;
     margin-left: auto;
@@ -61,6 +442,7 @@ section{
 
 /*The style for the exhibitions page*/
 
+
 .exhibitionsText1, .exhibitionsText2{
   margin: auto;
   width: 80%;
@@ -68,6 +450,7 @@ section{
   font-family: 'Helvetica';
   line-height: 30px;
   font-size: 17px;
+
 }
 
 .sectionarea1, .sectionarea2, .sectionarea3, .sectionarea4, .sectionarea5{
@@ -86,27 +469,28 @@ section{
 /*Tablet view*/
 @media all and (min-width:520px) {
 
-section{
+    section {
 
-    margin-left: 15px;
-    margin-right: 16px;
+        margin-left: 15px;
+        margin-right: 16px;
 
-}
+    }
 
-#birdwoman{
+    #birdwoman {
         width: 50%;
     }
 
-.bioImage{
+    .bioImage {
         width: 50%;
     }
 
-.biotext1 {
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 15px;
+    .biotext1 {
+        margin-left: 60px;
+        margin-right: 60px;
+        margin-bottom: 15px;
 
     }
+
 
 .exhibitionsText1,.exhibitionsText2 {
      width: 70%;
@@ -122,6 +506,7 @@ section{
 
 
 
+
 }
 
 /*Desktop view*/
@@ -129,37 +514,38 @@ section{
 
 
 
+    section {
 
-    section{
+        margin-left: 30px;
+        margin-left: 25px;
+    }
 
-    margin-left: 30px;
-    margin-left: 25px;
-}
 
     .lecturestext{
     width:60%;
 }
 
-    #birdwoman{
+
+    #birdwoman {
         width: 30%;
         margin-top: 1em;
         margin-bottom: 3em;
     }
 
 
-    .wrapper{
+    .wrapper {
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         justify-content: center;
-        justify-items:center;
+        justify-items: center;
 
 
     }
 
-    .bioImage{
+    .bioImage {
         grid-row: 2;
         place-self: center;
-        margin-top:7em;
+        margin-top: 7em;
         margin-right: 10em;
 
 
@@ -167,19 +553,21 @@ section{
 
     }
 
-    .biotext1{
+    .biotext1 {
         grid-row: 1;
         place-self: center;
-        margin-top:7em;
+        margin-top: 7em;
         margin-left: 10em;
         font-size: 19px;
 
     }
 
+
 .exhibitionsText1, .exhibitionsText2{
     width: 50%;
 
 }
+
 
     .sectionarea1, .sectionarea2, .sectionarea3, .sectionarea4, .sectionarea5{
      width: 60%;
