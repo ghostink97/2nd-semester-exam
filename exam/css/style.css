@@ -39,7 +39,7 @@ html {
 
 /* /// Naviagation - mobile and tablet /// */
 
-@media only screen and (min-width: 220px) and (max-width: 719px) {
+@media only screen and (min-width: 220px) and (max-width: 720px) {
 
     .desktop-hide {
         display: none;
