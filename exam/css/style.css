@@ -386,11 +386,11 @@ html {
 .exhibitions {
     text-align: center;
     margin-top: 25px;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3em;
 }
 
-.cvsub {
-    margin-left: 23px;
-}
+
 
 section {
     padding: 8px;
@@ -404,12 +404,15 @@ section {
 
 
 
-.lecturestext {
+
     padding: 16px;
+    line-height: 30px;
+    font-family: 'Helvetica';
+    font-size: 17px;
 }
 
 #birdwoman {
-    width: 60%;
+    width: 70%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -439,12 +442,25 @@ section {
 
 /*The style for the exhibitions page*/
 
-.exhibitionsText1,
-.exhibitionsText2 {
-    padding: 25px;
+
+.exhibitionsText1, .exhibitionsText2{
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  font-family: 'Helvetica';
+  line-height: 30px;
+  font-size: 17px;
+
 }
 
-
+.sectionarea1, .sectionarea2, .sectionarea3, .sectionarea4, .sectionarea5{
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  font-family: 'Helvetica';
+  line-height: 30px;
+  font-size: 17px;
+}
 
 
 
@@ -475,10 +491,19 @@ section {
 
     }
 
-    .exhibitionsText1,
-    .exhibitionsText2 {
-        padding: 35px;
-    }
+
+.exhibitionsText1,.exhibitionsText2 {
+     width: 70%;
+
+
+}
+
+
+.lecturestext{
+    width: 70%;
+
+}
+
 
 
 
@@ -487,25 +512,7 @@ section {
 /*Desktop view*/
 @media all and (min-width:995px) {
 
-    .cvmain {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "h1-area h1-area"
-            "section-area1 section-area2";
-    }
 
-    .cvmain h1 {
-        grid-area: h1-area;
-    }
-
-    .cvmain .section-area1 {
-        grid-area: section-area1;
-    }
-
-    .cvmain .section-area2 {
-        grid-area: section-area2;
-    }
 
     section {
 
@@ -513,10 +520,11 @@ section {
         margin-left: 25px;
     }
 
-    .lecturestext {
-        margin-right: 90px;
-        margin-left: 90px;
-    }
+
+    .lecturestext{
+    width:60%;
+}
+
 
     #birdwoman {
         width: 30%;
@@ -554,9 +562,16 @@ section {
 
     }
 
-    .exhibitionsText1,
-    .exhibitionsText2 {
-        padding: 55px;
+
+.exhibitionsText1, .exhibitionsText2{
+    width: 50%;
+
+}
+
+
+    .sectionarea1, .sectionarea2, .sectionarea3, .sectionarea4, .sectionarea5{
+     width: 60%;
+
     }
 
 
