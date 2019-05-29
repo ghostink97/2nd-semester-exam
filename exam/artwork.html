@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lene Stevns Jensen | Vessels</title>
+    <title>Lene Stevns Jensen | Artwork</title>
     <link rel="stylesheet" href="css/style.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body id="artbody">
 
     <header>
-         <!--------- The Navigation - Mobile and Tablet version  --------->
+        <!--------- The Navigation - Mobile and Tablet version  --------->
 
         <!-- Inspired by www.w3schools.com ; Link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
 
@@ -92,32 +92,32 @@
                 <li id="shop" class="menu-li"> <a id="shop" href="#">Shop</a></li>
             </ul>
         </nav>
+        <header></header>
 
-    </header>
-
-    <template>
-        <article>
-            <img class="productImg" alt="Product">
-        </article>
-    </template>
-    
     <main>
-
-        <!--Page title: Sculptures/Vessels/jewelry-->
-        <h1></h1>
-
-        <!--The products are displayed using the template above-->
-
-        <!-- Go to top (button) -->
+        <h1 id="artwork-title">Artwork</h1>
+        <h2 id="pageCats"></h2>
+        <section id="products" class="productlist">
+        </section>
+            <!-- Go to top (button) -->
              <!-- Used in previous projects -->
             <button onclick="btnTopFunction()" id="topBtn" title="Go to top">Top</button>
     
     </main>
-
     <footer>
-        
     </footer>
-
-    <script src="js/script.js"></script>
+    <template id="template">
+        <article class="oneProduct">
+            <img src="" alt="img goes here" class="prodimg">
+            <h3 class="prodtitle">Title</h3>
+            <h5 class="price">Price</h5>
+            <a href="#" class="etsy">
+                <img src="images/css-images/etsy.png" alt="Etsy Logo" id="etsylogo">
+            </a>
+            <button class="details">More Info</button>
+        </article>
+    </template>
+    <script src="js/products.js"></script>
+    <div id="credits">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 	title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 </body>
 </html>
