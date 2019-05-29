@@ -43,7 +43,7 @@ html {
 
 
 /* /// Naviagation - mobile and tablet /// */
-
+@media (min-width : 220px){
 #hamburger-menu {
     font-size: 31px;
     cursor: pointer;
@@ -61,6 +61,10 @@ html {
     width: 100%;
     height: 10px;
 }
+
+    .mobile{
+        display: none;
+    }
 
 .container {
     height: 100%;
@@ -102,35 +106,25 @@ html {
     font-size: 50px;
 }
 
-#mobile-nav ul li {
-    list-style: none;
-    position: relative;
+.submenu-Mobile {
+    position: static;
+    width: 100%;
 }
 
-#mobile-nav ul li.sub-menu:before {
-    content: '\f0d7';
-    position: absolute;
-    line-height: 50px;
-    color: red
+.submenu-Mobile a{
+    width: 95%;
+    margin: 0 auto;
 }
 
-#mobile-nav ul li ul {
-    position: absolute;
-    left: 0;
-    background: #333;
-    display: none;
+.submenu-Mobile li{
+   display: none;
 }
 
-#mobile-nav ul li.active ul {
+.display-block > li{
     display: block;
 }
 
-#mobile-nav ul li ul li {
-    display: block;
-    width: 200px;
 }
-
-
     /* /// Naviagation - desktop /// */
 
     #desktop-nav {
@@ -153,7 +147,7 @@ html {
     }
 
     #desktop-nav a#shop {
-        background-color: red;
+        background-color: #3330C2;
         color: white;
     }
 
@@ -326,11 +320,11 @@ html {
 
         #name {
             font-size: 55px;
-            padding-top: 250px;
+            padding-top: 300px;
         }
 
         #job {
-            font-size: 30px;
+            font-size: 22px;
         }
 
         #enterBtn {
@@ -341,7 +335,7 @@ html {
         }
 
         #media {
-            margin-top: 130px;
+            margin-top: 115px;
         }
     }
 
@@ -358,6 +352,7 @@ html {
 
         #name {
             font-size: 65px;
+            padding-top: 300px;
         }
 
         #enterBtn {

@@ -1,3 +1,25 @@
+const mq = window.matchMedia("(max-width: 719px)");
+
+if(mq.matches) {
+   const mobile = document.getElementsByClassName("mobile");
+    const subMenu = document.querySelectorAll(".submenu-Mobile");
+    const dropSubmenu =document. querySelectorAll(".drop-submenu");
+
+
+    for ( let i = 0; i < dropSubmenu.length; i++) {
+        dropSubmenu[i].addEventListener('click', function(){
+            subMenu[i].classList.toggle("display-block");
+        });
+    }
+
+}
+
+
+
+
+
+
+
 // Used  in previous projects
 // Inspired by  www.w3schools.com
 
