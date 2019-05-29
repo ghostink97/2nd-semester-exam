@@ -393,6 +393,7 @@ html {
     margin-top: 25px;
     font-family: 'Great Vibes', cursive;
     font-size: 3em;
+    margin-top: 2em;
 }
 
 
@@ -409,11 +410,15 @@ section {
 
 
 
-
-    padding: 16px;
-    line-height: 30px;
+.lecturestext{
+    margin: auto;
+    width: 80%;
+    padding: 10px;
     font-family: 'Helvetica';
+    line-height: 30px;
     font-size: 17px;
+    margin-bottom: 2em;
+    margin-top: 3em;
 }
 
 #birdwoman {
@@ -429,7 +434,7 @@ section {
 
 
 .bioImage {
-    width: 60%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -438,9 +443,14 @@ section {
 }
 
 .biotext1 {
-    margin-right: 16px;
-    margin-left: 16px;
-    margin-bottom: 40px;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-family: 'Helvetica';
+    line-height: 30px;
+    font-size: 17px;
+    margin-bottom: 2em;
+
 }
 
 
@@ -455,16 +465,30 @@ section {
   font-family: 'Helvetica';
   line-height: 30px;
   font-size: 17px;
+  margin-top: 2em;
 
 }
+
+
 
 .sectionarea1, .sectionarea2, .sectionarea3, .sectionarea4, .sectionarea5{
   margin: auto;
   width: 80%;
   padding: 10px;
   font-family: 'Helvetica';
-  line-height: 30px;
+  line-height: 40px;
   font-size: 17px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.cvpic{
+   width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    margin-top: 2em;
 }
 
 
@@ -490,9 +514,8 @@ section {
     }
 
     .biotext1 {
-        margin-left: 60px;
-        margin-right: 60px;
-        margin-bottom: 15px;
+        width: 80%;
+
 
     }
 
@@ -506,6 +529,12 @@ section {
 
 .lecturestext{
     width: 70%;
+
+}
+
+
+.cvpic{
+   width: 20%;
 
 }
 
@@ -561,7 +590,7 @@ section {
     .biotext1 {
         grid-row: 1;
         place-self: center;
-        margin-top: 7em;
+        margin-top: 6em;
         margin-left: 10em;
         font-size: 19px;
 
@@ -569,7 +598,7 @@ section {
 
 
 .exhibitionsText1, .exhibitionsText2{
-    width: 50%;
+    width: 60%;
 
 }
 
@@ -579,7 +608,10 @@ section {
 
     }
 
+.cvpic{
+   width: 10%;
 
+}
 
 
 }
