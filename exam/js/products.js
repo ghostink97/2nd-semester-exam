@@ -1,3 +1,5 @@
+let modal = document.querySelector("#modal");
+
 // Used  in previous projects
 // Inspired by  www.w3schools.com
 
@@ -73,6 +75,35 @@ function show(products){
         clone.querySelector(".prodtitle").textContent = product.product_title;
         clone.querySelector(".price").textContent = product.product_price + " kr.";
         clone.querySelector(".etsy").href = product.product_etsy;
+
+        clone.querySelector(".details").addEventListener("click", () => {
+          fetch(productLink + "products/" + product.id + "?_embed").then(e => e.json()).then(data => (showDetails(data)));
+      });
+
         main.appendChild(clone);
     })
 }
+
+//show details into the modal
+function showDetails(product){
+  modal.querySelector("h1").textContent=product.product_title;
+  modal.querySelector("img").src=product.product_image.guid;
+  modal.querySelector("#productPrice").textContent=product.product_price + " kr.";
+
+  if(product.product_measure){
+    modal.querySelector("#measure").textContent="Height: "+product.product_measure;
+  }
+  
+  if(product.product_material){
+    modal.querySelector("#material").textContent="Material: "+product.product_material;
+  }
+  
+  modal.querySelector("#description").textContent=product.product_description;
+  modal.querySelector("button").href=product.product_etsy;
+
+  modal.classList.remove("hide");
+}
+
+modal.querySelector("#cross").addEventListener("click", function () {
+  modal.classList.add("hide");
+});
