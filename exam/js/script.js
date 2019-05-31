@@ -45,3 +45,4 @@ function scroll() {
 function btnTopFunction() {
   document.documentElement.scrollTop = 0;
 }
+

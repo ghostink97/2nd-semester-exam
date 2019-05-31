@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lene Stevns Jensen | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+                <header>
+                        <!--------- The Navigation - Mobile and Tablet version  --------->
+            
+                    <!-- Inspired by www.w3schools.com ; Link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
+            
+                    <!-- Hamburger menu  -->
+                    <span id="hamburger-menu" onclick="openMobileNav()">&#9776; </span>
+            
+                    <!-- Home icon + link - back home  -->
+                    <a href="index.html"> <img id="home-btn" src="images/css-images/house.png" alt="house-button -go to the home page"> </a>
+            
+                    <!-- Navigation line  -->
+                    <div id="line"></div>
+            
+                    <!-- The whole menu + close btn  -->
+                    <div id="mobileNav" class="container" class="mobile">
+                        <a href="#" id="closebtnMobile" onclick="closeMobileNav()">&times;</a>
+            
+             <!-- The container for navigation   -->
+                        <div id="mobile-nav" class="container-content">
+                            <ul>
+                                <li><a href="home.html">News</a></li>
+            
+                                <li>
+                                    <a href="#" class="drop-submenu">Artwork <i class="fa fa-caret-down"></i></a>
+                                    <ul class="submenu-Mobile">
+                                        <li> <a href="artwork.html">Sculptures</a></li>
+                                        <li> <a href="artwork.html">Jewellery</a></li>
+                                        <li> <a href="artwork.html">Vessels</a></li>
+                                    </ul>
+                                </li>
+            
+                                <li>
+                                    <a href="#" class="drop-submenu">Info <i class="fa fa-caret-down"></i></a>
+                                    <ul class="submenu-Mobile">
+                                        <li> <a href="bio.html">About me</a></li>
+                                        <li> <a href="cv.html">CV</a></li>
+                                        <li> <a href="exhibitions.html">Exhibitions</a>
+                                        <li> <a href="lectures.html">Lectures</a></li>
+                                    </ul>
+                                </li>
+            
+                                <li><a id="shopM" href="#">Shop</a></li>
+                            </ul>
+                        </div>
+            
+                    </div>
+            
+            
+                    <!-- The Navigation -Desktop version  -->
+            
+                    <!-- Inspired by a video from youtube. Link: https://www.youtube.com/watch?v=zguFq71ZR4Y -->
+            
+                    <nav class="desktop-hide" id="desktop-nav">
+            
+                        <ul>
+                            <li class="menu-li"><a href="index.html"><img id="home-btn-desktop" src="images/css-images/house.png" alt="house button - go to the home page"></a></li>
+            
+                            <li class="menu-li"><a href="home.html">News</a></li>
+            
+                            <li class="menu-li">
+                                <a href="#">Artwork <i class="fa fa-caret-down"></i></a>
+                                <ul class="dropdown-menu-ul">
+                                    <li class="dropdown-menu-li"> <a href="artwork.html">Sculptures</a></li>
+                                    <li class="dropdown-menu-li"> <a href="artwork.html">Jewellery</a></li>
+                                    <li class="dropdown-menu-li"> <a href="artwork.html">Vessels</a></li>
+                                </ul>
+                            </li>
+            
+                            <li class="menu-li">
+                                <a href="#">Info <i class="fa fa-caret-down"></i></a>
+                                <ul class="dropdown-menu-ul">
+                                    <li class="dropdown-menu-li"> <a href="bio.html">About me</a></li>
+                                    <li class="dropdown-menu-li"> <a href="cv.html">CV</a></li>
+                                    <li class="dropdown-menu-li"> <a href="exhibitions.html">Exhibitions</a></li>
+                                    <li class="dropdown-menu-li"> <a href="lectures.html">Lectures</a></li>
+                                </ul>
+                            </li>
+            
+                            <li id="shop" class="menu-li"> <a id="shop" href="#">Shop</a></li>
+                        </ul>
+                    </nav>
+            
+                </header>
+                
+                <main>
+
+                        <section id="eventsList">
+                                <template id="template">
+                                    <div id="news-container">
+                                        <article class="item">
+                                            <div id="eventimg-container"><img src="" id="eventimg" alt="Event Image"></div>
+                                            <div class="text-container">
+                                            <h1 id="title"></h1>
+                                            <h4 class="newstext" id="date"></h4>
+                                            <h4 class="newstext" id="adress"></h4>
+                                            <h4 class="newstext" id="description"></h4>
+                                        </article>
+                                    </div>
+                                </template>
+                            </section>
+
+                </main>
+
+                    <footer>
+                
+                        <div class="footer1">
+                            <h1>Galleri Unicorn</h1>
+                            <p> Rørholmsgade13, kld.tv</p>
+                            <p> 1352 København K., Denmark</p>
+                            <p>Tue-Fri : 12:00-17:30 and by appointment</p>
+                        </div>
+                
+                        <div class="footer2">
+                            <h1>Contact</h1>
+                            <p>+45 61480505</p>
+                            <p>lenest.jensen@gmail.com</p>
+                            <img id="fb-icon" src="images/css-images/fb3.png" alt="Facebook icon">
+                        </div>
+                
+                    </footer>
+
+                    </div>
+
+                    <script src="js/script.js"></script>
+                    <script src="js/news.js"></script>
+
+                </body>
+                
+</html>
