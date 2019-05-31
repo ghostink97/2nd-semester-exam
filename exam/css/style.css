@@ -722,6 +722,8 @@ section {
 
 }
 
+
+
 /*The style for the bio page*/
 
 
@@ -758,6 +760,7 @@ section {
   line-height: 30px;
   font-size: 17px;
   margin-top: 2em;
+  margin-bottom: 2em;
 
 }
 
@@ -783,7 +786,14 @@ section {
     margin-top: 2em;
 }
 
-
+#video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
 
 
 
@@ -830,7 +840,10 @@ section {
 
 }
 
+#video{
+width: 60%;
 
+}
 
 
 }
@@ -856,6 +869,11 @@ section {
         width: 30%;
         margin-top: 1em;
         margin-bottom: 3em;
+    }
+
+
+    #video{
+        width:40%;
     }
 
 
