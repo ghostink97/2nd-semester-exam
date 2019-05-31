@@ -98,6 +98,10 @@
     </header>
     
     <main>
+        
+        <section class="slideshow-container" id="carousel"></section>
+
+        <div id="dots" class="border-line-bottom"></div>
 
         <article>
                 <picture>
@@ -137,9 +141,22 @@
 
     </footer>
 
+     <!-- The Template for the Carousel Item -->
+     <template id="carousel-item">
+        <div class="mySlides">
+                <img class="centered animated bounceInRight carousel-image" src="" alt="Carousel item">
+            <div class="text">
+                <h2 class="carousel-title"></h2>
+            </div>
+        </div>
+    </template>
+
 </div>
 
     <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
 </body>
 
 </html>
