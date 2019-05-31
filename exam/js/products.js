@@ -95,7 +95,7 @@ function showDetails(product){
   }
   
   if(product.product_material){
-    modal.querySelector("#material").textContent="Material: "+product.product_material;
+    modal.querySelector("#material").textContent="Materials: "+product.product_material;
   }
   
   modal.querySelector("#description").textContent=product.product_description;
