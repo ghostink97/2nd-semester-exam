@@ -676,6 +676,15 @@ span.active,
 
 /*Mobile view*/
 
+
+/*The color for all pages*/
+.backColor{
+  background-color: #f3e8db;
+}
+
+
+
+
 /*The style for the cv page*/
 .cv,
 .lectures,
@@ -796,6 +805,23 @@ section {
 }
 
 
+.homePic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+}
+
+.homeQuote{
+    text-align: center;
+    font-family: 'Great vibes', cursive;
+    font-size: 30px;
+}
+
+
 
 /*Tablet view*/
 @media all and (min-width:520px) {
@@ -846,6 +872,17 @@ width: 60%;
 }
 
 
+.homePic{
+ width: 40%;
+
+ }
+
+.homeQuote{
+ font-size: 35px;
+
+}
+
+
 }
 
 /*Desktop view*/
@@ -874,6 +911,15 @@ width: 60%;
 
     #video{
         width:40%;
+    }
+
+
+    .homePic{
+        width: 25%;
+    }
+
+    .homeQuote{
+        font-size: 40px;
     }
 
 
@@ -922,6 +968,8 @@ width: 60%;
    width: 10%;
 
 }
+
+
 }
 
 
