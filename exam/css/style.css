@@ -844,7 +844,6 @@ section {
     width: 50%;
     margin-top: 2em;
     margin-bottom: 3em;
-
 }
 
 .homeQuote{
@@ -888,27 +887,21 @@ section {
 .cvpic{
    width: 20%;
 }
-<<<<<<< HEAD
-=======
+
 
 #video{
 width: 60%;
-
 }
 
 
 .homePic{
  width: 40%;
-
  }
 
 .homeQuote{
  font-size: 35px;
-
 }
 
-
->>>>>>> origin/master
 }
 
 /*Desktop view*/
@@ -929,8 +922,7 @@ width: 60%;
         margin-bottom: 3em;
     }
 
-<<<<<<< HEAD
-=======
+
 
     #video{
         width:40%;
@@ -945,8 +937,6 @@ width: 60%;
         font-size: 40px;
     }
 
-
->>>>>>> origin/master
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
