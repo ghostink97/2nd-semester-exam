@@ -106,11 +106,11 @@ footer p{
     display: none;
 }
 
-#modal article #cross {
+#modal #cross {
     width: 30px;
     position: absolute;
-    right: 1%;
-    top: 1%;
+    right: 16%;
+    top: 8%;
     cursor: pointer;
 }
 
@@ -128,24 +128,21 @@ footer p{
 #modal article{
     background-color: white;
     width: 70%;
-    padding: 2%;
-}
-
-#wraperModal{
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     padding: 2em;
 }
 
-#modal #productImg{
+#modal #pic{
     grid-area: 1/1;
     text-align: center;
-}
-
-#modal article img{
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1em;
 }
 
 #modal article h1{
@@ -157,6 +154,7 @@ footer p{
 #modal #productDetails{
     grid-area: 1/2;
     margin-left: 10%;
+    margin-top: 1em;
     padding: 2em;
     background-color: rgba(194, 195, 207, 0.075);
 }
@@ -175,6 +173,7 @@ footer p{
     height: 50px;
     background-color: #f68e56;
     color: white;
+    cursor: pointer;
 }
 
 /* /////////////// Slider Style ////////////// */
@@ -405,8 +404,9 @@ span.active,
     }
 
     /* MODAL MOBILE AND TABLET VIEW*/
-    #modal article #cross {
-        top: 0;
+    #modal #cross {
+        top: 50px;
+        right: 10%;
     }
 
     #modal {
@@ -416,10 +416,6 @@ span.active,
     #modal article{
         background-color: white;
         width: 90%;
-        padding: 2%;
-    }
-
-    #wraperModal{
         display: block;
         padding: 2em;
     }
