@@ -1031,7 +1031,7 @@ article{
     top: 0em;
     left: 50%;
     transform: translate(-50%, 0%);
-    padding: .01em;
+    padding: .1em;
 }
 
 .prodtitle{
@@ -1108,7 +1108,7 @@ article{
 }
 
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 600px){
 	.prodimg{
         width:100%;
         position: relative;
