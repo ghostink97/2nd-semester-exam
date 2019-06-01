@@ -844,13 +844,22 @@ section {
     width: 50%;
     margin-top: 2em;
     margin-bottom: 3em;
+    padding: 1em;
 
 }
 
 .homeQuote{
-    text-align: center;
+    line-height: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
     font-family: 'Great vibes', cursive;
-    font-size: 30px;
+    font-size: 27px;
+}
+
+.homeContainer{
+    background-color:white;
+    margin-top: 2em;
+
 }
 
 
@@ -910,7 +919,7 @@ width: 60%;
  }
 
 .homeQuote{
- font-size: 35px;
+ font-size: 29px;
 
 }
 
@@ -946,12 +955,30 @@ width: 60%;
     }
 
 
+    .homeContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+
+    }
+
+
     .homePic{
-        width: 25%;
+        width: 43%;
+        grid-row: 2;
+        place-self: center;
+        margin-top: 4em;
+        margin-right: 15em;
     }
 
     .homeQuote{
-        font-size: 40px;
+        font-size: 37px;
+        grid-row: 1;
+        place-self: center;
+        margin-top: 1em;
+        margin-left: 4em;
+
     }
 
 
