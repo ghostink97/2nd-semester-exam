@@ -844,12 +844,16 @@ section {
     width: 50%;
     margin-top: 2em;
     margin-bottom: 3em;
+    padding: 1em;
 }
 
 .homeQuote{
     text-align: center;
     font-family: 'Great vibes', cursive;
-    font-size: 30px;
+    font-size: 28px;
+    line-height: 1.5em;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 
@@ -895,11 +899,11 @@ width: 60%;
 
 
 .homePic{
- width: 40%;
+ width: 45%;
  }
 
 .homeQuote{
- font-size: 35px;
+ font-size: 33px;
 }
 
 }
@@ -925,16 +929,35 @@ width: 60%;
 
 
     #video{
+        margin-top: 20em;
         width:40%;
     }
 
+    .homeContainer{
+        height: 400px;
+        margin-top: 9em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        background-color: white;
+    }
 
     .homePic{
-        width: 25%;
+        width: 50%;
+        grid-row: 2;
+        place-self: center;
+        margin-top: 3em;
+        margin-right: 10em;
     }
 
     .homeQuote{
-        font-size: 40px;
+        grid-row: 1;
+        font-size: 37px;
+        place-self: center;
+        margin-top: 1em;
+        margin-right: auto;
+        margin-left: 10%;
     }
 
     .wrapper {
