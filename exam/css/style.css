@@ -686,6 +686,15 @@ span.active,
 
 /*Mobile view*/
 
+
+/*The color for all pages*/
+.backColor{
+  background-color: #f3e8db;
+}
+
+
+
+
 /*The style for the cv page*/
 .cv,
 .lectures,
@@ -732,6 +741,8 @@ section {
 
 }
 
+
+
 /*The style for the bio page*/
 
 
@@ -768,6 +779,7 @@ section {
   line-height: 30px;
   font-size: 17px;
   margin-top: 2em;
+  margin-bottom: 2em;
 
 }
 
@@ -793,7 +805,31 @@ section {
     margin-top: 2em;
 }
 
+#video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
 
+
+.homePic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+
+}
+
+.homeQuote{
+    text-align: center;
+    font-family: 'Great vibes', cursive;
+    font-size: 30px;
+}
 
 
 
@@ -840,7 +876,21 @@ section {
 
 }
 
+#video{
+width: 60%;
 
+}
+
+
+.homePic{
+ width: 40%;
+
+ }
+
+.homeQuote{
+ font-size: 35px;
+
+}
 
 
 }
@@ -866,6 +916,20 @@ section {
         width: 30%;
         margin-top: 1em;
         margin-bottom: 3em;
+    }
+
+
+    #video{
+        width:40%;
+    }
+
+
+    .homePic{
+        width: 25%;
+    }
+
+    .homeQuote{
+        font-size: 40px;
     }
 
 
@@ -914,6 +978,8 @@ section {
    width: 10%;
 
 }
+
+
 }
 
 
