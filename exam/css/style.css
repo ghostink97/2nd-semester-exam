@@ -222,7 +222,7 @@ footer p{
 }
 
 .text {
-    color: var(--color-black);
+    color: black;
     background-color: #fff;
     font-size: 24px;
     width: 100%;
@@ -455,7 +455,7 @@ span.active,
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     box-shadow: 0 3px 2px -2px gray;
-     background-image: white;
+     background-color: white;
 }
 
 #desktop-nav ul {
@@ -543,7 +543,7 @@ span.active,
 #job {
     color: white;
     font-family: Helvetica, sans-serif;
-    font-weight: 10;
+    font-weight: bold;
     font-size: 20px;
     text-align: center;
 }
