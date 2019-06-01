@@ -48,6 +48,11 @@ footer img{
     width: 10px;
 }
 
+footer .etsyIcon{
+    width:15px;
+    margin-left: 10px;
+}
+
 footer p{
     margin-bottom: 1em;
     opacity: 0.7;
@@ -92,11 +97,11 @@ footer p{
     display: none;
 }
 
-#cross {
-    width: 50%;
+#modal article #cross {
+    width: 3%;
     position: absolute;
-    top: 2%;
-    right: 10%;
+    right: 1%;
+    top: 1%;
     cursor: pointer;
 }
 
@@ -112,10 +117,14 @@ footer p{
 }
 
 #modal article{
-
     background-color: white;
     width: 70%;
+    padding: 2%;
+}
+
+#wraperModal{
     display: grid;
+    padding: 2em;
 }
 
 #modal #productImg{
@@ -130,12 +139,13 @@ footer p{
 }
 
 #modal article h1{
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 0.8em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 #modal #productDetails{
     grid-area: 1/2;
-    margin-top: 5em;
     margin-left: 10%;
     padding: 2em;
     background-color: rgba(194, 195, 207, 0.075);

@@ -87,7 +87,7 @@ function show(products){
 //show details into the modal
 function showDetails(product){
   modal.querySelector("h1").textContent=product.product_title;
-  modal.querySelector("img").src=product.product_image.guid;
+  modal.querySelector("#pic").src=product.product_image.guid;
   modal.querySelector("#productPrice").textContent=product.product_price + " kr.";
 
   if(product.product_measure){
