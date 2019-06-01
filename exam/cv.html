@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +11,10 @@
 
 <body>
 
-        <div class="mainContainer">
+    <div class="mainContainer">
 
-    <header>
-        <!--------- The Navigation - Mobile and Tablet version  --------->
+        <header>
+           <!--------- The Navigation - Mobile and Tablet version  --------->
 
         <!-- Inspired by www.w3schools.com ; Link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
 
@@ -21,7 +22,7 @@
         <span id="hamburger-menu" onclick="openMobileNav()">&#9776; </span>
 
         <!-- Home icon + link - back home  -->
-        <a href="index.html"> <img id="home-btn" src="images/css-images/house.png" alt="house-button -go to the home page"> </a>
+        <a href="home.html"> <img id="home-btn" src="images/css-images/house.png" alt="house-button -go to the home page"> </a>
 
         <!-- Navigation line  -->
         <div id="line"></div>
@@ -33,16 +34,9 @@
  <!-- The container for navigation   -->
             <div id="mobile-nav" class="container-content">
                 <ul>
-                    <li><a href="home.html">News</a></li>
+                    <li><a href="news.html">News</a></li>
 
-                    <li>
-                        <a href="#" class="drop-submenu">Artwork <i class="fa fa-caret-down"></i></a>
-                        <ul class="submenu-Mobile">
-                            <li> <a href="artwork.html">Sculptures</a></li>
-                            <li> <a href="artwork.html">Jewellery</a></li>
-                            <li> <a href="artwork.html">Vessels</a></li>
-                        </ul>
-                    </li>
+                   <li><a href="artwork.html">Artwork</a></li>
 
                     <li>
                         <a href="#" class="drop-submenu">Info <i class="fa fa-caret-down"></i></a>
@@ -68,18 +62,11 @@
         <nav class="desktop-hide" id="desktop-nav">
 
             <ul>
-                <li class="menu-li"><a href="index.html"><img id="home-btn-desktop" src="images/css-images/house.png" alt="house button - go to the home page"></a></li>
+                <li class="menu-li"><a href="home.html"><img id="home-btn-desktop" src="images/css-images/house.png" alt="house button - go to the home page"></a></li>
 
-                <li class="menu-li"><a href="home.html">News</a></li>
+                <li class="menu-li"><a href="news.html">News</a></li>
 
-                <li class="menu-li">
-                    <a href="#">Artwork <i class="fa fa-caret-down"></i></a>
-                    <ul class="dropdown-menu-ul">
-                        <li class="dropdown-menu-li"> <a href="artwork.html">Sculptures</a></li>
-                        <li class="dropdown-menu-li"> <a href="artwork.html">Jewellery</a></li>
-                        <li class="dropdown-menu-li"> <a href="artwork.html">Vessels</a></li>
-                    </ul>
-                </li>
+                <li class="menu-li"> <a href="artwork.html">Artwork</a></li>
 
                 <li class="menu-li">
                     <a href="#">Info <i class="fa fa-caret-down"></i></a>
@@ -94,171 +81,171 @@
                 <li id="shop" class="menu-li"> <a id="shop" href="#">Shop</a></li>
             </ul>
         </nav>
+        </header>
 
-    </header>
+        <main class="backColor" class="cvmain">
 
-    <main class="cvmain">
+            <h1 class="cv">CV</h1>
 
-        <h1 class="cv">CV</h1>
+            <!--paragraph one-->
+            <section class="sectionarea1">
 
-        <!--paragraph one-->
-        <section class="sectionarea1">
 
+                <h2>Artist In Residence And Stays Abroad</h2>
 
-    <h2>Artist In Residence And Stays Abroad</h2>
 
+                <p>1989 Guest at The Central Academy of Arts and Design, Beijing, China.</p>
+                <p>1992 Guest at The University of Fairbanks, Alaska.</p>
+                <p>1999 Exhibition and stay in Seattle, USA.</p>
+                <p>2002 Exhibition and stay in Skopje, Macedonia.</p>
+                <p>2003 Stay and exhibition at The Banff Centre of Arts in Canada.</p>
+                <p>2006 Invited to join The 2006 China Yunnan International Folk Arts and Crafts High-Level Forum and Nationality Folk Arts and Crafts Exhibition.</p>
+                <p>2010 Stay at The Danish Institute in Damascus, Syria.</p>
+                <p>2012 Stay as an Artist in Residence at Svalbard, Jan Mayen.</p>
+                <p>2018 Artist in Residence at The Ou Gallery, Duncan, Vancouver Island, Canada.</p>
 
-     <p>1989 Guest at The Central Academy of Arts and Design, Beijing, China.</p>
-     <p>1992 Guest at The University of Fairbanks, Alaska.</p>
-     <p>1999 Exhibition and stay in Seattle, USA.</p>
-     <p>2002 Exhibition and stay in Skopje, Macedonia.</p>
-     <p>2003 Stay and exhibition at The Banff Centre of Arts in Canada.</p>
-     <p>2006 Invited to join The 2006 China Yunnan International Folk Arts and Crafts High-Level Forum and Nationality Folk Arts and Crafts Exhibition.</p>
-     <p>2010 Stay at The Danish Institute in Damascus, Syria.</p>
-     <p>2012 Stay as an Artist in Residence at Svalbard, Jan Mayen.</p>
-     <p>2018 Artist in Residence at The Ou Gallery, Duncan, Vancouver Island, Canada.</p>
 
 
+            </section>
 
-        </section>
+            <figure>
+                <img class="cvpic" src="images/lene/narwhal-sea-animal-shape.png">
 
-        <figure >
-        <img class="cvpic" src="images/lene/narwhal-sea-animal-shape.png">
+            </figure>
 
-        </figure>
 
+            <!--paragraph two-->
+            <section class="sectionarea2">
 
-        <!--paragraph two-->
-        <section class="sectionarea2">
+                <h2>Exhibitions Abroad</h2>
 
-    <h2>Exhibitions Abroad</h2>
 
+                <p>1997 Exhibition at The Danish Central Library in Flensborg, Germany.</p>
+                <p>1999 Exhibition at The Nordic Heritage Museum in Seattle, USA.</p>
+                <p>2002 Exhibition in Skopje, Macedonia.</p>
+                <p>2003 Exhibition at The Other Gallery in Banff, Canada.</p>
+                <p>2006 Exhibition at Yunnan Hanrongxuan Culture and Art Museum.</p>
+                <p>2011 Exhibition at Gallery Frida, Kyrkhult, Sweeden.</p>
 
-      <p>1997 Exhibition at The Danish Central Library in Flensborg, Germany.</p>
-      <p>1999 Exhibition at The Nordic Heritage Museum in Seattle, USA.</p>
-      <p>2002 Exhibition in Skopje, Macedonia.</p>
-      <p>2003 Exhibition at The Other Gallery in Banff, Canada.</p>
-      <p>2006 Exhibition at Yunnan Hanrongxuan Culture and Art Museum.</p>
-      <p>2011 Exhibition at Gallery Frida, Kyrkhult, Sweeden.</p>
 
 
+            </section>
 
-        </section>
+            <figure>
+                <img class="cvpic" src="images/lene/narwhal-sea-animal-shape.png">
 
-<figure >
-        <img class="cvpic" src="images/lene/narwhal-sea-animal-shape.png">
+            </figure>
 
-        </figure>
 
 
 
 
 
+            <!--paragraph three-->
+            <section class="sectionarea3">
 
-   <!--paragraph three-->
-    <section class="sectionarea3">
+                <h2>Latest Exhibitions In Denmark</h2>
 
-    <h2>Latest Exhibitions In Denmark</h2>
 
+                <p>2010 The Sculpture Biennale in The King's Garden, Copenhagen. The Johannes Larsen Muesum in Kerteminde.</p>
+                <p>2011 Palæfløjen, Roskilde.</p>
+                <p>2012 The Sculpture Biennale at The King's Garden, Copenhagen. International Art Festival, Kerteminde.</p>
+                <p>2013 The Copenhagen Zoo. Poesi of the Elements, Ølgod. Æglageret, Holbæk.</p>
+                <p>2014 Gimsinghoved. Augustiana Sculpture Park. Dronninglund Art Centre.</p>
+                <p>2015 Kirsten Kjær Museum. Sculpture exhibition, Ølgod</p>
+                <p>2016 Kirkehavegaard. Gallery North. Birkelundgaard. Banegaarden, Aabenraa</p>
+                <p>2017 Sculpture exhibition, Galten. Copenhagen Town Hall. Brøndsalen, Frederiksberg. Farum Culture House.</p>
+                <p>2018 Det ny Kastet, Thisted. Dronninglund Kunstcenter. Agger Skulpturbiennale. Brøndsalen, Frederiksberg.</p>
 
-     <p>2010 The Sculpture Biennale in The King's Garden, Copenhagen. The Johannes Larsen Muesum in Kerteminde.</p>
-     <p>2011 Palæfløjen, Roskilde.</p>
-     <p>2012 The Sculpture Biennale at The King's Garden, Copenhagen. International Art Festival, Kerteminde.</p>
-     <p>2013 The Copenhagen Zoo. Poesi of the Elements, Ølgod. Æglageret, Holbæk.</p>
-     <p>2014 Gimsinghoved. Augustiana Sculpture Park. Dronninglund Art Centre.</p>
-     <p>2015 Kirsten Kjær Museum. Sculpture exhibition, Ølgod</p>
-     <p>2016 Kirkehavegaard. Gallery North. Birkelundgaard. Banegaarden, Aabenraa</p>
-     <p>2017 Sculpture exhibition, Galten. Copenhagen Town Hall. Brøndsalen, Frederiksberg. Farum Culture House.</p>
-     <p>2018 Det ny Kastet, Thisted. Dronninglund Kunstcenter. Agger Skulpturbiennale. Brøndsalen, Frederiksberg.</p>
 
 
 
+            </section>
 
-        </section>
 
+            <figure>
+                <img class="cvpic" src="images/lene/narwhal-sea-animal-shape.png">
 
-        <figure >
-        <img class="cvpic" src="images/lene/narwhal-sea-animal-shape.png">
+            </figure>
 
-        </figure>
+            <!--paragraph four-->
+            <section class="sectionarea4">
 
-        <!--paragraph four-->
-        <section class="sectionarea4">
+                <h2>Grants</h2>
 
-    <h2>Grants</h2>
 
+                <p>The Daloon Foundation 1989, 1994</p>
+                <p>The Knud Højgaard Foundation 1992, 2003, 2010, 2013</p>
+                <p>The Gottfred and Gerda Eickhoff Foundation 1999, 2002</p>
+                <p>Counsul Georg Jorck and Emma Jorck's Foundation 1999, 2002</p>
+                <p>Politiken Foundation 1999, 2001</p>
+                <p>Nationalbankens Jubilæumsfond 2000</p>
+                <p>Frederik og Emma Kraghs Mindefond 2016</p>
+                <p>Anna E. Munchs Legat 2017</p>
 
-     <p>The Daloon Foundation 1989, 1994</p>
-     <p>The Knud Højgaard Foundation 1992, 2003, 2010, 2013</p>
-     <p>The Gottfred and Gerda Eickhoff Foundation 1999, 2002</p>
-     <p>Counsul Georg Jorck and Emma Jorck's Foundation 1999, 2002</p>
-     <p>Politiken Foundation 1999, 2001</p>
-     <p>Nationalbankens Jubilæumsfond 2000</p>
-     <p>Frederik og Emma Kraghs Mindefond 2016</p>
-     <p>Anna E. Munchs Legat 2017</p>
 
 
 
 
+            </section>
 
-        </section>
 
+            <figure>
+                <img class="cvpic" src="images/lene/narwhal-sea-animal-shape.png">
 
-        <figure >
-        <img class="cvpic" src="images/lene/narwhal-sea-animal-shape.png">
+            </figure>
 
-        </figure>
+            <!--paragraph five-->
+            <section class="sectionarea5">
 
-        <!--paragraph five-->
-        <section class="sectionarea5">
 
+                <h2>Memberships</h2>
 
-    <h2>Memberships</h2>
 
+                <p>Member of BKF - Visual Artists' Assosiation</p>
+                <p>Member of KKS - Danish Women's Artist Assosiation</p>
+                <p>Member of DBS - Danish Sculptors' Society</p>
+                <p>Member of the group Animal Life</p>
+                <p>Member of the group TEAM-ART</p>
+                <p>Member of VAK - The Art Workshops of West Zealand</p>
 
-     <p>Member of BKF - Visual Artists' Assosiation</p>
-     <p>Member of KKS - Danish Women's Artist Assosiation</p>
-     <p>Member of DBS - Danish Sculptors' Society</p>
-     <p>Member of the group Animal Life</p>
-     <p>Member of the group TEAM-ART</p>
-     <p>Member of VAK - The Art Workshops of West Zealand</p>
 
 
 
 
+            </section>
 
-        </section>
+            <div id="credits">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
-<div id="credits">Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 
+            <!-- Go to top (button) -->
+            <!-- Used in previous projects -->
+            <button onclick="btnTopFunction()" id="topBtn" title="Go to top">Top</button>
 
-        <!-- Go to top (button) -->
-        <!-- Used in previous projects -->
-        <button onclick="btnTopFunction()" id="topBtn" title="Go to top">Top</button>
+        </main>
 
-    </main>
-
-    <footer>
+        <footer>
 
             <div class="footer1">
-                    <h1>Galleri Unicorn</h1>
-                    <p> Rørholmsgade13, kld.tv</p>
-                    <p> 1352 København K., Denmark</p>
-                    <p>Tue-Fri : 12:00-17:30 and by appointment</p>
-                </div>
-        
+                <h1>Galleri Unicorn</h1>
+                <p> Rørholmsgade13, kld.tv</p>
+                <p> 1352 København K., Denmark</p>
+                <p>Tue-Fri : 12:00-17:30 and by appointment</p>
+            </div>
+
             <div class="footer2">
-                <p>Lene Stevns Jensen</p>
                 <h1>Contact</h1>
+                <p>Lene Stevns Jensen</p>
                 <p>+45 61480505</p>
                 <p>lenest.jensen@gmail.com</p>
                 <img id="fb-icon" src="images/css-images/fb3.png" alt="Facebook icon">
             </div>
 
-    </footer>
+        </footer>
 
     </div>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
