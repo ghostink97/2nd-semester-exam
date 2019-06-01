@@ -14,6 +14,10 @@ html {
     position: relative;
 }
 
+header{
+    background-color: white;
+}
+
 /* USED TO KEEP THE FOOTER AT THE BOTTOM OF THE PAGE. SRC: https://matthewjamestaylor.com/bottom-footer*/
 .mainContainer{
  min-height: 100vh; /* will cover the 100% of viewport */
