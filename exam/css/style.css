@@ -106,11 +106,11 @@ footer p{
     display: none;
 }
 
-#modal article #cross {
+#modal #cross {
     width: 30px;
     position: absolute;
-    right: 1%;
-    top: 1%;
+    right: 16%;
+    top: 8%;
     cursor: pointer;
 }
 
@@ -128,24 +128,21 @@ footer p{
 #modal article{
     background-color: white;
     width: 70%;
-    padding: 2%;
-}
-
-#wraperModal{
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     padding: 2em;
 }
 
-#modal #productImg{
+#modal #pic{
     grid-area: 1/1;
     text-align: center;
-}
-
-#modal article img{
     width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1em;
 }
 
 #modal article h1{
@@ -157,6 +154,7 @@ footer p{
 #modal #productDetails{
     grid-area: 1/2;
     margin-left: 10%;
+    margin-top: 1em;
     padding: 2em;
     background-color: rgba(194, 195, 207, 0.075);
 }
@@ -175,6 +173,7 @@ footer p{
     height: 50px;
     background-color: #f68e56;
     color: white;
+    cursor: pointer;
 }
 
 /* /////////////// Slider Style ////////////// */
@@ -227,7 +226,7 @@ footer p{
 }
 
 .text {
-    color: var(--color-black);
+    color: black;
     background-color: #fff;
     font-size: 24px;
     width: 100%;
@@ -405,8 +404,9 @@ span.active,
     }
 
     /* MODAL MOBILE AND TABLET VIEW*/
-    #modal article #cross {
-        top: 0;
+    #modal #cross {
+        top: 50px;
+        right: 10%;
     }
 
     #modal {
@@ -416,10 +416,6 @@ span.active,
     #modal article{
         background-color: white;
         width: 90%;
-        padding: 2%;
-    }
-
-    #wraperModal{
         display: block;
         padding: 2em;
     }
@@ -465,7 +461,7 @@ span.active,
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     box-shadow: 0 3px 2px -2px gray;
-     background-image: white;
+    background-color: white;
     z-index: 98;
 }
 
@@ -554,7 +550,7 @@ span.active,
 #job {
     color: white;
     font-family: Helvetica, sans-serif;
-    font-weight: 10;
+    font-weight: bold;
     font-size: 20px;
     text-align: center;
 }
@@ -861,10 +857,6 @@ section {
 }
 
 
-.homeContainer{
-    background-color: white;
-}
-
 
 /*Tablet view*/
 @media all and (min-width:520px) {
@@ -938,9 +930,19 @@ width: 60%;
 
 
     #video{
+        margin-top: 20em;
         width:40%;
     }
 
+    .homeContainer{
+        height: 400px;
+        margin-top: 9em;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        justify-items: center;
+        background-color: white;
+    }
 
     .homeContainer{
        display: grid;
@@ -950,7 +952,7 @@ width: 60%;
     }
 
     .homePic{
-        width: 45%;
+         width: 50%;
         grid-row: 2;
         place-self: center;
         margin-top: 3em;
@@ -958,13 +960,14 @@ width: 60%;
     }
 
     .homeQuote{
-
         grid-row: 1;
+        font-size: 37px;
         place-self: center;
         margin-top: 1em;
-        margin-left: 4em;
-        font-size: 37px;
+        margin-right: auto;
+        margin-left: 10%;
     }
+
 
     .wrapper {
         display: grid;
