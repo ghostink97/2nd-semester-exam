@@ -92,13 +92,18 @@ footer p{
     box-shadow: 4px 8px 13px #4a4a4a;
 }
 
+/*HOME ICON MOBILE HIDDEN ON DESKTOP*/
+#home-btn{
+    display: none;
+}
+
 /* MODAL DESKTOP VIEW */
 .hide{
     display: none;
 }
 
 #modal article #cross {
-    width: 3%;
+    width: 30px;
     position: absolute;
     right: 1%;
     top: 1%;
@@ -315,6 +320,7 @@ span.active,
     }
 
     #home-btn {
+        display: block;
         width: 25px;
         float: right;
         margin-top: 10px;
@@ -389,13 +395,29 @@ span.active,
     }
 
     /* MODAL MOBILE AND TABLET VIEW*/
+    #modal article #cross {
+        top: 0;
+    }
+    
+    #modal {
+        background-color:white;
+    }
+    
     #modal article{
+        background-color: white;
+        width: 90%;
+        padding: 2%;
+    }
+    
+    #wraperModal{
         display: block;
+        padding: 2em;
     }
 
     #modal #productDetails{
         margin-left: auto;
         margin-right: auto;
+        margin-top: 2em;
     }
 
 
