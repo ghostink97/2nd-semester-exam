@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="backColor">
+<body>
 
     <div class="mainContainer">
 
-    <header>
-            <!--------- The Navigation - Mobile and Tablet version  --------->
+        <header>
+ <!--------- The Navigation - Mobile and Tablet version  --------->
 
         <!-- Inspired by www.w3schools.com ; Link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
 
@@ -35,14 +35,7 @@
                 <ul>
                     <li><a href="news.html">News</a></li>
 
-                    <li>
-                        <a href="#" class="drop-submenu">Artwork <i class="fa fa-caret-down"></i></a>
-                        <ul class="submenu-Mobile">
-                            <li> <a href="artwork.html">Sculptures</a></li>
-                            <li> <a href="artwork.html">Jewellery</a></li>
-                            <li> <a href="artwork.html">Vessels</a></li>
-                        </ul>
-                    </li>
+                   <li><a href="artwork.html">Artwork</a></li>
 
                     <li>
                         <a href="#" class="drop-submenu">Info <i class="fa fa-caret-down"></i></a>
@@ -72,14 +65,7 @@
 
                 <li class="menu-li"><a href="news.html">News</a></li>
 
-                <li class="menu-li">
-                    <a href="#">Artwork <i class="fa fa-caret-down"></i></a>
-                    <ul class="dropdown-menu-ul">
-                        <li class="dropdown-menu-li"> <a href="artwork.html">Sculptures</a></li>
-                        <li class="dropdown-menu-li"> <a href="artwork.html">Jewellery</a></li>
-                        <li class="dropdown-menu-li"> <a href="artwork.html">Vessels</a></li>
-                    </ul>
-                </li>
+                <li class="menu-li"> <a href="artwork.html">Artwork</a></li>
 
                 <li class="menu-li">
                     <a href="#">Info <i class="fa fa-caret-down"></i></a>
@@ -95,39 +81,39 @@
             </ul>
         </nav>
 
-    </header>
-    
-    <main>
-        
-        <section class="slideshow-container" id="carousel"></section>
+        </header>
 
-        <div id="dots" class="border-line-bottom"></div>
+        <main  class="backColor">
+
+            <section class="slideshow-container" id="carousel"></section>
+
+            <div id="dots" class="border-line-bottom"></div>
 
 
             <figure>
-            <img class="homePic" src="images/lene/homepage.jpg" alt="the picture of the artist">
+                <img class="homePic" src="images/lene/homepage.jpg" alt="the picture of the artist">
             </figure>
             <p class="homeQuote">"Women are more powerful than what they think"</p>
 
             <video id="video" controls>
-            <source src="" type="video/mp4">
-            Your browser does not support the video tag.
+                <source src="" type="video/mp4">
+                Your browser does not support the video tag.
             </video>
-    
+
 
             <!-- Go to top (button) -->
-             <!-- Used in previous projects -->
+            <!-- Used in previous projects -->
             <button onclick="btnTopFunction()" id="topBtn" title="Go to top">Top</button>
-    </main>
+        </main>
 
-    <footer>
+        <footer>
 
-        <div class="footer1">
-            <h1>Galleri Unicorn</h1>
-            <p> Rørholmsgade13, kld.tv</p>
-            <p> 1352 København K., Denmark</p>
-            <p>Tue-Fri : 12:00-17:30 and by appointment</p>
-        </div>
+            <div class="footer1">
+                <h1>Galleri Unicorn</h1>
+                <p> Rørholmsgade13, kld.tv</p>
+                <p> 1352 København K., Denmark</p>
+                <p>Tue-Fri : 12:00-17:30 and by appointment</p>
+            </div>
 
         <div class="footer2">
             <h1>Contact</h1>
@@ -140,19 +126,19 @@
             <img class="etsyIcon" src="images/css-images/etsy-lg.png" alt="Etsy icon">
         </div>
 
-    </footer>
+        </footer>
 
-     <!-- The Template for the Carousel Item -->
-     <template id="carousel-item">
-        <div class="mySlides">
+        <!-- The Template for the Carousel Item -->
+        <template id="carousel-item">
+            <div class="mySlides">
                 <img class="centered animated bounceInRight carousel-image" src="" alt="Carousel item">
-            <div class="text">
-                <h2 class="carousel-title"></h2>
+                <div class="text">
+                    <h2 class="carousel-title"></h2>
+                </div>
             </div>
-        </div>
-    </template>
+        </template>
 
-</div>
+    </div>
 
     <script src="js/script.js"></script>
     <script src="js/slider.js"></script>

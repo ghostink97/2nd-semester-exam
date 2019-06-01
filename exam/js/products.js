@@ -29,6 +29,7 @@ function openMobileNav() {
     document.documentElement.scrollTop = 0;
   }
 //product list
+//used in previous projects
 
 const template = document.querySelector("#template").content;
 const main=document.querySelector("#products");
