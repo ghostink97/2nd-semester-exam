@@ -1,3 +1,8 @@
+//enter button on landing page
+document.querySelector("#enterBtn").addEventListener("click", function(){
+  window.open("home.html", "_self");
+} );
+
 // Mobile navigation
 
 const mq = window.matchMedia("(max-width: 719px)");
