@@ -3,7 +3,7 @@
 const mq = window.matchMedia("(max-width: 719px)");
 
 if(mq.matches) {
-   const mobile = document.getElementsByClassName("mobile");
+   const mobile = document.getElementsByClassName("container");
     const subMenu = document.querySelectorAll(".submenu-Mobile");
     const dropSubmenu =document. querySelectorAll(".drop-submenu");
 
