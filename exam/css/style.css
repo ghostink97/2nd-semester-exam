@@ -463,6 +463,7 @@ span.active,
     color: black;
     display: block;
     padding: 14px 16px;
+     margin-top: 4px;
 }
 
 #desktop-nav a#shop {
@@ -478,7 +479,7 @@ span.active,
 #desktop-nav a:hover {
     background-color: orange;
     color: white;
-    transition: all 1.2s;
+    transition: all 0.5s;
 }
 
 .menu-li {
