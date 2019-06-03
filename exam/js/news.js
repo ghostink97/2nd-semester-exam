@@ -49,9 +49,11 @@ setInterval(function () {
 }, 1000)
 
 function showMore() {
-    const scrollY = window.scrollY
-    const visible = document.documentElement.clientHeight
-    const pageHeight = document.documentElement.scrollHeight
-    const bottomOfPage = visible + scrollY >= pageHeight
-    return bottomOfPage || pageHeight < visible
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        return true;
+    }else{
+        return false;
+
+    }
+
 }
