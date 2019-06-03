@@ -787,6 +787,10 @@ section {
 
 }
 
+.homeContainer{
+    background-color: white;
+}
+
 
 
 /*The style for the exhibitions page*/
@@ -840,8 +844,8 @@ section {
     margin-right: auto;
     width: 50%;
     margin-top: 2em;
-    margin-bottom: 3em;
-    padding: 1em;
+    margin-bottom: 2em;
+    padding: 2em;
 }
 
 .homeQuote{
@@ -852,6 +856,8 @@ section {
     margin-left: 1em;
     margin-right: 1em;
 }
+
+
 
 
 /*Tablet view*/
@@ -937,24 +943,24 @@ width: 60%;
         grid-template-columns: 1fr 1fr;
         justify-content: center;
         justify-items: center;
-        background-color: white;
+
     }
 
     .homePic{
-        width: 50%;
+        width: 40%;
         grid-row: 2;
         place-self: center;
-        margin-top: 3em;
+        margin-top: 2em;
         margin-right: 10em;
+        margin-bottom: 2em;
+
     }
 
     .homeQuote{
         grid-row: 1;
-        font-size: 37px;
         place-self: center;
         margin-top: 1em;
-        margin-right: auto;
-        margin-left: 10%;
+        margin-left: 3em;
     }
 
     .wrapper {
@@ -967,8 +973,9 @@ width: 60%;
     .bioImage {
         grid-row: 2;
         place-self: center;
-        margin-top: 7em;
+        margin-top: 4em;
         margin-right: 10em;
+        padding: 2em;
     }
 
     .biotext1 {
