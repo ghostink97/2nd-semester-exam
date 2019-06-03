@@ -452,7 +452,7 @@ span.active,
     box-shadow: 0 3px 2px -2px gray;
     background-color: white;
     z-index: 98;
-    height: 51px
+    height: 57px;
 }
 
 #desktop-nav ul {
@@ -464,7 +464,7 @@ span.active,
     text-decoration: none;
     color: black;
     display: block;
-    padding: 16.2px 16px;
+    padding: 19px 16px;
 
 }
 
@@ -495,7 +495,7 @@ span.active,
 
 .dropdown-menu-ul {
     position: absolute;
-    top: 51px;
+    top: 57px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
      z-index: 98;
     background-color: white;
