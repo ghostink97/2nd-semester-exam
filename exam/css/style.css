@@ -1020,7 +1020,8 @@ text-align: center;
     color: black;
     text-align: center;
     padding: .3em 1em;
-    font-size: .6em;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 #etsylogo{
