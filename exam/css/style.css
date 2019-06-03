@@ -14,7 +14,7 @@ html {
     position: relative;
 }
 
-header{
+header {
     background-color: white;
 }
 
@@ -28,7 +28,7 @@ header{
  background-color: #f3e8db;
 }
 
-/*  FOOTER DESKTOP VIEW */ 
+/*  FOOTER DESKTOP VIEW */
 footer {
     background-color: black;
     color: white;
@@ -41,7 +41,7 @@ footer {
     width: 100%;
 }
 
-footer h1{
+footer h1 {
     width: 250px;
     font-size: 1.2em;
     border-bottom: 1px solid rgba(256, 256, 256, 0.5);
@@ -49,30 +49,30 @@ footer h1{
     margin-bottom: 1em;
 }
 
-footer img{
+footer img {
     width: 10px;
 }
 
-footer .etsyIcon{
-    width:15px;
+footer .etsyIcon {
+    width: 15px;
     margin-left: 10px;
 }
 
-footer p{
+footer p {
     margin-bottom: 1em;
     opacity: 0.7;
 }
 
-.footer1{
+.footer1 {
     grid-area: 1/1;
-    margin-left:auto;
-    margin-right:30%;
+    margin-left: auto;
+    margin-right: 30%;
 }
 
-.footer2{
+.footer2 {
     grid-area: 1/2;
     margin-right: auto;
-    margin-left:30%;
+    margin-left: 30%;
     text-align: left;
 }
 
@@ -98,12 +98,12 @@ footer p{
 }
 
 /*HOME ICON MOBILE HIDDEN ON DESKTOP*/
-#home-btn{
+#home-btn {
     display: none;
 }
 
 /* MODAL DESKTOP VIEW */
-.hide{
+.hide {
     display: none;
 }
 
@@ -117,7 +117,7 @@ footer p{
 
 #modal {
     position: fixed;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 10;
     top: 0;
     height: 100%;
@@ -126,7 +126,7 @@ footer p{
     overflow: scroll;
 }
 
-#modal article{
+#modal article {
     background-color: white;
     width: 60%;
     margin-top: 3em;
@@ -137,7 +137,7 @@ footer p{
     padding: 2em;
 }
 
-#modal #pic{
+#modal #pic {
     grid-area: 1/1;
     text-align: center;
     width: 100%;
@@ -147,13 +147,13 @@ footer p{
     margin-top: 1em;
 }
 
-#modal article h2{
+#modal article h2 {
     margin-bottom: 1em;
     padding-bottom: 0.8em;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#modal #productDetails{
+#modal #productDetails {
     grid-area: 1/2;
     margin-left: 10%;
     margin-top: 1em;
@@ -161,15 +161,15 @@ footer p{
     background-color: rgba(194, 195, 207, 0.075);
 }
 
-#productDetails p{
+#productDetails p {
     margin-bottom: 2em;
 }
 
-#productPrice{
+#productPrice {
     font-weight: bold;
 }
 
-#modal button{
+#modal button {
     border: none;
     width: 100px;
     height: 50px;
@@ -309,9 +309,9 @@ span.active,
 }
 
 @media only screen and (min-width: 1300px) {
-    #eventsList {
     grid-template-columns: auto auto;
     grid-row-gap: 50px;
+
     }
 }
 
@@ -412,17 +412,18 @@ span.active,
     }
 
     #modal {
-        background-color:white;
+        background-color: white;
     }
 
-    #modal article{
+    #modal article {
         background-color: white;
         width: 90%;
         display: block;
         padding: 2em;
     }
-/*modal*/
-    #modal #productDetails{
+
+    /*modal*/
+    #modal #productDetails {
         margin-left: auto;
         margin-right: auto;
         margin-top: 2em;
@@ -430,7 +431,7 @@ span.active,
 
 
     /* FOOTER MOBILE AND TABLET VIEW */
-    .mainContainer{
+    .mainContainer {
         padding-bottom: 400px;
     }
 
@@ -439,17 +440,17 @@ span.active,
         padding: 3em;
         display: block;
     }
-    
-    footer h1{
+
+    footer h1 {
         width: 40%;
     }
-    
-    .footer1{
-        margin-left:10%;
+
+    .footer1 {
+        margin-left: 10%;
         margin-right: inherit;
     }
-    
-    .footer2{
+
+    .footer2 {
         margin-top: 4em;
         margin-right: auto;
         margin-left: 10%;
@@ -477,13 +478,12 @@ span.active,
     color: black;
     display: block;
     padding: 19px 16px;
-
 }
 
 #desktop-nav a#shop {
     background-color: #3330C2;
     color: white;
-     cursor: pointer;
+    cursor: pointer;
 }
 
 
@@ -509,7 +509,7 @@ span.active,
     position: absolute;
     top: 57px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-     z-index: 98;
+    z-index: 98;
     background-color: white;
 }
 
@@ -533,7 +533,7 @@ span.active,
     width: 22px;
 }
 
-#desktop-nav #home-hover:hover{
+#desktop-nav #home-hover:hover {
     background-color: white;
 }
 
@@ -578,15 +578,15 @@ span.active,
     margin-left: auto;
     margin-right: auto;
     display: block;
-     border-radius: 5px;
+    border-radius: 5px;
     font-weight: 700;
     letter-spacing: 0.2px;
 }
 
 #enterBtn:hover {
     cursor: pointer;
-        border: 2px solid white;
-        color: white;
+    border: 2px solid white;
+    color: white;
 }
 
 #enterBtn-a {
@@ -625,6 +625,7 @@ span.active,
     #media {
         margin-top: 180px;
     }
+
     #name {
         font-size: 45px;
         padding-top: 290px;
@@ -656,7 +657,8 @@ span.active,
     #hamburger-menu {
         display: none;
     }
-    .container{
+
+    .container {
         display: none;
     }
 
@@ -696,11 +698,11 @@ span.active,
         display: none;
     }
 
-    .container{
+    .container {
         display: none;
     }
 
-    home-btn{
+    home-btn {
         display: none;
     }
 
@@ -730,8 +732,8 @@ span.active,
 
 
 /*The color for all pages*/
-.backColor{
-  background-color: #f3e8db;
+.backColor {
+    background-color: #f3e8db;
     height: 100%;
 }
 
@@ -759,7 +761,7 @@ section {
 
 /*The style for the lectures page*/
 
-.lecturestext{
+.lecturestext {
     margin: auto;
     width: 80%;
     padding: 10px;
@@ -804,7 +806,7 @@ section {
 
 }
 
-.homeContainer{
+.homeContainer {
     background-color: white;
 }
 
@@ -812,32 +814,36 @@ section {
 
 /*The style for the exhibitions page*/
 
-.exhibitionsText1, .exhibitionsText2{
-  margin: auto;
-  width: 80%;
-  padding: 10px;
-  font-family: 'Helvetica';
-  line-height: 30px;
-  font-size: 17px;
-  margin-top: 2em;
-  margin-bottom: 2em;
-
+.exhibitionsText1,
+.exhibitionsText2 {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-family: 'Helvetica';
+    line-height: 30px;
+    font-size: 17px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 
-.sectionarea1, .sectionarea2, .sectionarea3, .sectionarea4, .sectionarea5{
-  margin: auto;
-  width: 80%;
-  padding: 10px;
-  font-family: 'Helvetica';
-  line-height: 40px;
-  font-size: 17px;
-  margin-top: 2em;
-  margin-bottom: 2em;
+.sectionarea1,
+.sectionarea2,
+.sectionarea3,
+.sectionarea4,
+.sectionarea5 {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    font-family: 'Helvetica';
+    line-height: 40px;
+    font-size: 17px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
-.cvpic{
-   width: 30%;
+.cvpic {
+    width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -845,8 +851,8 @@ section {
     margin-top: 2em;
 }
 
-#video{
-    width:100%;
+#video {
+    width: 100%;
     height: 315px;
     display: block;
     margin-left: auto;
@@ -855,7 +861,7 @@ section {
 }
 
 
-.homePic{
+.homePic {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -865,7 +871,7 @@ section {
     padding: 2em;
 }
 
-.homeQuote{
+.homeQuote {
     text-align: center;
     font-family: 'Great vibes', cursive;
     font-size: 28px;
@@ -873,7 +879,6 @@ section {
     margin-left: 1em;
     margin-right: 1em;
 }
-
 
 
 
@@ -898,28 +903,26 @@ section {
     }
 
 
-.exhibitionsText1,.exhibitionsText2 {
-     width: 70%;
-}
+    .exhibitionsText1,
+    .exhibitionsText2 {
+        width: 70%;
+    }
 
+    .lecturestext {
+        width: 70%;
+    }
 
-.lecturestext{
-    width: 70%;
-}
+    .cvpic {
+        width: 20%;
+    }
 
+    .homePic {
+        width: 45%;
+    }
 
-.cvpic{
-   width: 20%;
-}
-
-
-.homePic{
- width: 45%;
- }
-
-.homeQuote{
- font-size: 33px;
-}
+    .homeQuote {
+        font-size: 33px;
+    }
 
 }
 
@@ -931,9 +934,9 @@ section {
         margin-left: 25px;
     }
 
-    .lecturestext{
-    width:60%;
-}
+    .lecturestext {
+        width: 60%;
+    }
 
     #birdwoman {
         width: 30%;
@@ -941,15 +944,13 @@ section {
         margin-bottom: 3em;
     }
 
-
-
     #video{
         margin-top: 5em;
         width:560px;
         height: 315px;
     }
 
-    .homeContainer{
+    .homeContainer {
         height: 400px;
         margin-top: 9em;
         display: grid;
@@ -959,17 +960,16 @@ section {
 
     }
 
-    .homePic{
+    .homePic {
         width: 40%;
         grid-row: 2;
         place-self: center;
         margin-top: 2em;
         margin-right: 10em;
         margin-bottom: 2em;
-
     }
 
-    .homeQuote{
+    .homeQuote {
         grid-row: 1;
         place-self: center;
         margin-top: 1em;
@@ -1000,40 +1000,42 @@ section {
     }
 
 
-.exhibitionsText1, .exhibitionsText2{
-    width: 60%;
-
-}
-
-    .sectionarea1, .sectionarea2, .sectionarea3, .sectionarea4, .sectionarea5{
-     width: 60%;
+    .exhibitionsText1,
+    .exhibitionsText2 {
+        width: 60%;
     }
 
-.cvpic{
-   width: 10%;
-}
+    .sectionarea1,
+    .sectionarea2,
+    .sectionarea3,
+    .sectionarea4,
+    .sectionarea5 {
+        width: 60%;
+    }
 
-
+    .cvpic {
+        width: 10%;
+    }
 }
 
 
 
 /*Artwork Page*/
 
-#artwork-title{
+#artwork-title {
     font-family: 'Great Vibes', cursive;
     text-align: center;
     font-size: 3em;
     padding-top: .6em;
 }
 
-#pageCats{
+#pageCats {
     display: block;
-text-align: center;    
+    text-align: center;
 }
 
 /*categories*/
-#pageCats a{
+#pageCats a {
     margin-top: .6em;
     text-decoration: none;
     display: inline-block;
@@ -1046,7 +1048,7 @@ text-align: center;
     font-weight: bold;
 }
 
-#etsylogo{
+#etsylogo {
     width: 10%;
     float: right;
     margin-bottom: 3em;
@@ -1054,72 +1056,72 @@ text-align: center;
     margin-right: 1em;
 }
 
-.prodimg{
-    width:90%;
+.prodimg {
+    width: 90%;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0%);
 }
 
-.oneProduct{
-    margin-top:5em;
+.oneProduct {
+    margin-top: 5em;
     background-color: #86532380;
     padding: .12em;
 }
 
-.prodtitle{
-    margin-top:.5em;
+.prodtitle {
+    margin-top: .5em;
     margin-left: .5em;
 }
 
-.price{
+.price {
     text-align: left;
     margin-left: .7em;
 }
 
-#artmain{
+#artmain {
     background-color: #f3e8db;
 }
 
-#btn-wrapper{
-margin-left: 43%;
+#btn-wrapper {
+    margin-left: 43%;
 }
 
-.details{
+.details {
     text-decoration: none;
     background-color: transparent;
     font-family: helvetica, sans-serif;
     font-size: .8em;
-    border:none;
+    border: none;
     cursor: pointer;
     font-weight: bolder;
     margin-top: 3em;
-     margin-bottom: 1em;
+    margin-bottom: 1em;
     padding: 0.5em;
     border-radius: 10%;
     border-style: ridge;
     border-color: #000;
 }
 
-#etsylogo:hover{
+#etsylogo:hover {
     transform: scale(1.2);
     transition: .3s ease-in-out;
 }
 
-.details:hover{
+.details:hover {
     background-color: #cf6328;
-    border:none;
+    border: none;
     transform: scale(1.5);
     transition: .3s ease-in-out;
     color: white;
 }
 
-#pageCats a:hover{
+#pageCats a:hover {
     transform: scale(1.5);
     transition: .3s ease-in-out;
 }
 
-#credits{
+#credits {
     font-size: .7em;
     text-align: center;
     color: rgb(94, 94, 94);
@@ -1128,36 +1130,37 @@ margin-left: 43%;
     background-color: rgb(243, 232, 219);
 }
 
-#credits a{
+#credits a {
     font-size: .7em;
     text-align: center;
     color: rgb(94, 94, 94);
-    margin-bottom:5em;
-    margin-top:10em;
+    margin-bottom: 5em;
+    margin-top: 10em;
 }
 
-@media screen and (min-width: 600px){
-	.prodimg{
-        width:100%;
+@media screen and (min-width: 600px) {
+    .prodimg {
+        width: 100%;
         position: relative;
         top: 0em;
         left: 50%;
         transform: translate(-50%, 0%);
-	}
-	#products{
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		grid-gap:1em;
-	}
+    }
 
-    #etsylogo{
+    #products {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 1em;
+    }
+
+    #etsylogo {
         text-align: right;
         margin-left: 11em;
         margin-bottom: 1.5em;
     }
 
 
-.details{
-    margin-top: 0em;
-}
+    .details {
+        margin-top: 0em;
+    }
 }
