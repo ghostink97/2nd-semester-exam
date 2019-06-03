@@ -566,11 +566,15 @@ span.active,
     margin-left: auto;
     margin-right: auto;
     display: block;
+     border-radius: 5px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
 }
 
 #enterBtn:hover {
-    box-shadow: 3px 3px 5px 0px #ccc;
     cursor: pointer;
+        border: 2px solid white;
+        color: white;
 }
 
 #enterBtn-a {
