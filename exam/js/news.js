@@ -14,7 +14,7 @@ function fetchEvents() {
 }
 
 function showEvents(data) {
-    console.log(data)
+    console.log(data);
     lookingForData = false;
     data.forEach(showSingleEvent);
 }
@@ -25,7 +25,7 @@ function showSingleEvent(anEvent) {
     console.log(anEvent); 
     
     clone.querySelector("#eventimg").setAttribute("src", anEvent.news_image.guid);
-    clone.querySelector("#title").textContent = anEvent.news_title;
+    clone.querySelector("#news-title").textContent = anEvent.news_title;
     clone.querySelector("#adress").textContent = "Adress: " + anEvent.news_adress;
     clone.querySelector("#date").textContent = "Opening: " + anEvent.news_date + ", " + " from " + anEvent.start_time + " to " + anEvent.end_time;
     clone.querySelector("#description").textContent = anEvent.news_description;
@@ -49,9 +49,11 @@ setInterval(function () {
 }, 1000)
 
 function showMore() {
-    const scrollY = window.scrollY
-    const visible = document.documentElement.clientHeight
-    const pageHeight = document.documentElement.scrollHeight
-    const bottomOfPage = visible + scrollY >= pageHeight
-    return bottomOfPage || pageHeight < visible
+    if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
+        return true;
+    }else{
+        return false;
+
+    }
+
 }
