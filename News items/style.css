@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+
+#eventsList {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0 7%;
+}
+
+.item {
+    width: 600px;
+}
+
+#eventimg {
+    border-radius: 50%;
+}
+
+.newstext {
+    font-size: 14px;
+}
+
+#news-container {
+    overflow: auto;
+    width: 700px;
+    margin: 0 auto;
+}
+
+#eventimg-container {
+    float: right;
+    display: block;
+    
+}
+
+#title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 1500px) {
+    #eventsList {
+    grid-template-columns: auto auto;
+    }
+}
