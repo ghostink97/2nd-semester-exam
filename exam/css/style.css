@@ -109,7 +109,7 @@ footer p{
 #modal #cross {
     width: 30px;
     position: absolute;
-    right: 16%;
+    right: 21%;
     top: 8%;
     cursor: pointer;
 }
@@ -127,8 +127,9 @@ footer p{
 
 #modal article{
     background-color: white;
-    width: 70%;
+    width: 60%;
     margin-top: 3em;
+    margin-bottom: 3em;
     margin-left: auto;
     margin-right: auto;
     display: grid;
@@ -829,11 +830,11 @@ section {
 }
 
 #video{
+    width:100%;
+    height: 315px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
-    margin-top: 2em;
     margin-bottom: 3em;
 }
 
@@ -896,11 +897,6 @@ section {
 }
 
 
-#video{
-width: 60%;
-}
-
-
 .homePic{
  width: 45%;
  }
@@ -932,8 +928,8 @@ width: 60%;
 
 
     #video{
-        margin-top: 20em;
-        width:40%;
+        width:560px;
+        height: 315px;
     }
 
     .homeContainer{
@@ -1037,7 +1033,7 @@ text-align: center;
     width: 10%;
     float: right;
     margin-bottom: 3em;
-    display: relative;
+    position: relative;
     margin-right: 1em;
 }
 
