@@ -25,6 +25,7 @@ header{
  display: block;
  position: relative;
  padding-bottom: 250px; /* height of your footer */
+ background-color: #f3e8db;
 }
 
 /*  FOOTER DESKTOP VIEW */ 
@@ -940,6 +941,7 @@ section {
 
 
     #video{
+        margin-top: 5em;
         width:560px;
         height: 315px;
     }
