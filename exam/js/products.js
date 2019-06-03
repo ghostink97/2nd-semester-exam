@@ -59,7 +59,7 @@ function show(products){
     })
 }
 
-//show details into the modal
+//showdetails into the modal
 function showDetails(product){
   modal.querySelector("#namedetails").textContent=product.product_title;
 

@@ -29,7 +29,7 @@ function closeMobileNav() {
 }
 
 
-// Used  in previous projects
+// Used  in previous project
 // Scroll down more then 25px - see the button
 window.onscroll = function() {scroll()};
 
