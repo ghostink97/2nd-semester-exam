@@ -535,6 +535,7 @@ span.active,
 
 #desktop-nav #home-hover:hover {
     background-color: white;
+    padding-bottom: 10px;
 }
 
 /* ///////// Index page ////////// */
@@ -563,7 +564,6 @@ span.active,
     font-size: 20px;
     text-align: center;
 }
-
 
 #enterBtn {
     background-color: transparent;
