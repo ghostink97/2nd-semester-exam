@@ -535,6 +535,7 @@ span.active,
 
 #desktop-nav #home-hover:hover {
     background-color: white;
+    padding-bottom: 10px;
 }
 
 /* ///////// Index page ////////// */
