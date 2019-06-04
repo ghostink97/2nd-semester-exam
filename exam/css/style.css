@@ -247,10 +247,11 @@ span.active,
     background-color: orange;
 }
 
-#slider-img-container img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.centered {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* ////////// News Page /////////// */
@@ -309,9 +310,9 @@ span.active,
 }
 
 @media only screen and (min-width: 1300px) {
+    #eventsList {
     grid-template-columns: auto auto;
     grid-row-gap: 50px;
-
     }
 }
 

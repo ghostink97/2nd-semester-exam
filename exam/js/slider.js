@@ -28,7 +28,7 @@ function show(events) {
                 const carouselImage = clone.querySelector(".carousel-image");
                 const carouselTitle = clone.querySelector(".carousel-title");
 
-                carouselImage.src = event.news_image.guid;
+                carouselImage.src = event.slider_image.guid;
 
                 carouselTitle.innerHTML = event.news_title;             
             
