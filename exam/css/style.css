@@ -574,7 +574,6 @@ span.active,
     padding-right: 15px;
     border: double;
     margin-top: 20px;
-    margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -596,35 +595,27 @@ span.active,
 /* Social media icons */
 
 #media {
-    margin-top: 85px;
+    margin-top: 70px;
     text-align: center;
 }
 
 #media img {
-    width: 15px;
+    width: 30px;
     display: inline-block;
     margin-left: 5px;
     cursor: pointer;
 }
 
-#media #fb-icon {
-    width: 10.5px;
-}
 
 
-
-@media all and (min-width:220px) {
+@media only screen and (min-width: 220px) and (max-width: 360px){
 
     #media {
-        margin-top: 53px;
+        margin-top: 75px;
     }
 }
 
 @media all and (min-width:360px) {
-
-    #media {
-        margin-top: 180px;
-    }
 
     #name {
         font-size: 45px;
@@ -683,7 +674,7 @@ span.active,
     }
 
     #media {
-        margin-top: 115px;
+        margin-top: 110px;
     }
 }
 
@@ -719,7 +710,7 @@ span.active,
     }
 
     #media {
-        margin-top: 100px;
+        margin-top: 6%;
     }
 }
 
