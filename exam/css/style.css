@@ -19,13 +19,15 @@ header {
 }
 
 /* USED TO KEEP THE FOOTER AT THE BOTTOM OF THE PAGE. SRC: https://matthewjamestaylor.com/bottom-footer*/
-.mainContainer{
- min-height: 100vh; /* will cover the 100% of viewport */
- overflow: hidden;
- display: block;
- position: relative;
- padding-bottom: 250px; /* height of your footer */
- background-color: #f3e8db;
+.mainContainer {
+    min-height: 100vh;
+    /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 250px;
+    /* height of your footer */
+    background-color: #f3e8db;
 }
 
 /*  FOOTER DESKTOP VIEW */
@@ -278,7 +280,7 @@ span.active,
     background-color: #86532380;
     overflow: auto;
     margin: 0 auto;
-    
+
 }
 
 .text-container {
@@ -312,7 +314,7 @@ span.active,
     grid-template-columns: auto auto;
     grid-row-gap: 50px;
 
-    }
+}
 }
 
 /* /////////////// Navigation //////////////// */
@@ -608,7 +610,7 @@ span.active,
 
 
 
-@media only screen and (min-width: 220px) and (max-width: 360px){
+@media only screen and (min-width: 220px) and (max-width: 360px) {
 
     #media {
         margin-top: 75px;
@@ -935,9 +937,9 @@ section {
         margin-bottom: 3em;
     }
 
-    #video{
+    #video {
         margin-top: 5em;
-        width:560px;
+        width: 560px;
         height: 315px;
     }
 
