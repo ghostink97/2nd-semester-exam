@@ -16,35 +16,34 @@ function findCats(){
     
 }
 
-findCats()
+findCats();
 
 if (catID) {
-    loadByCats(catID)
+    loadByCats(catID);
 } else {
-    loadAllThings()
+    loadAllThings();
 }
 
 function buildCats(cats){
     cats.forEach(cat => {
-        console.log(cat)
+        console.log(cat);
         const newLink=document.createElement("a");
         newLink.textContent=cat.name;
         newLink.href="?cat="+cat.id;
         pageCats.appendChild(newLink);
-    })
+    });
 }
 
 function loadByCats(cat){
-    fetch(productLink+"products?categories="+cat+"&_embed").then(e=>e.json()).then(show);
+    fetch(productLink+"products?categories="+cat+"&_embed&per_page=100").then(e=>e.json()).then(show);
 }
 
 function loadAllThings(){
-    fetch(productLink+"products?_embed").then(e=>e.json()).then(show);
+    fetch(productLink+"products?_embed&per_page=100").then(e=>e.json()).then(show);
 }
 
 function show(products){
     products.forEach(product => {
-        console.log(product)
         const clone=template.cloneNode(true);
         clone.querySelector(".prodimg").src = product.product_image.guid;
         clone.querySelector(".prodtitle").textContent = product.product_title;

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lene Stevns Jensen | News</title>
+    <link rel="icon" href="icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -27,7 +28,7 @@
         <div id="line"></div>
 
         <!-- The whole menu + close btn  -->
-        <div id="mobileNav" class="container mobile">
+        <div id="mobileNav" class="container">
             <a href="#" id="closebtnMobile" onclick="closeMobileNav()">&times;</a>
 
  <!-- The container for navigation   -->
@@ -61,9 +62,9 @@
         <nav class="desktop-hide" id="desktop-nav">
 
             <ul>
-                <li class="menu-li"><a href="home.html"><img id="home-btn-desktop" src="images/css-images/house.png" alt="house button - go to the home page"></a></li>
+                 <li class="menu-li"><a id="home-hover" href="home.html"><img id="home-btn-desktop" src="images/css-images/house.png" alt="house button - go to the home page"></a></li>
 
-                <li class="menu-li"><a href="news.html">News</a></li>
+                <li class="menu-li"><a class="active" href="news.html">News</a></li>
 
                 <li class="menu-li"> <a href="artwork.html">Artwork</a></li>
 
@@ -84,25 +85,30 @@
                 
                 <main class="backColor">
 
-                        <div id="eventsList">
-                                <template id="template">
-                                    <div id="news-container">
-                                        <article class="item">
-                                            <div id="eventimg-container"><img src="" id="eventimg" alt="Event Image"></div>
-                                            <div class="text-container">
-                                            <h1 id="title"></h1>
-                                            <h4 class="newstext" id="date"></h4>
-                                            <h4 class="newstext" id="adress"></h4>
-                                                <h4 class="newstext" id="description"></h4></div>
-                                        </article>
-                                    </div>
-                                </template>
-                            </div>
 
+                    <h1 id="news-page-title">News</h1>
+
+                    <div id="eventsList">
+                            <template id="template">
+                                    <article class="news-item">
+                                        <div id="eventimg-container"><img src="" id="eventimg" alt="Event Image"></div>
+                                        <div class="text-container">
+                                        <h1 id="news-title"></h1>
+                                        <h4 id="date"></h4>
+                                        <h4 id="adress"></h4>
+                                        <h4 id="description"></h4>
+                                        </div>
+                                    </article>
+                            </template>
+                        </div>
+
+ <!-- Go to top (button) -->
+             <!-- Used in previous projects -->
+            <button onclick="btnTopFunction()" id="topBtn" title="Go to top">Top</button>
                 </main>
-
+      
                     <footer>
-                
+               
                         <div class="footer1">
                             <h1>Galleri Unicorn</h1>
                             <p> Rørholmsgade13, kld.tv</p>
