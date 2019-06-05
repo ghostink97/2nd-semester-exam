@@ -1,8 +1,5 @@
-let modal = document.querySelector("#modal");
-
-
 //product list
-//used in previous projects
+//used in previous projects and learnt in class:
 
 const template = document.querySelector("#template").content;
 const main=document.querySelector("#products");
@@ -10,6 +7,7 @@ const pageCats=document.querySelector("#pageCats");
 const urlParms=new URLSearchParams(window.location.search);
 const productLink="http://wp.quickcocktails.dk/wp-json/wp/v2/";
 const catID=urlParms.get("cat");
+const modal = document.querySelector("#modal");
 
 function findCats(){
     fetch(productLink+"categories").then(e=>e.json()).then(buildCats);
