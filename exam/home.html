@@ -21,11 +21,6 @@
         <!-- Hamburger menu  -->
         <span id="hamburger-menu" onclick="openMobileNav()">&#9776; </span>
 
-        <!-- Home icon + link - back home  -->
-        <a href="home.html"> <img id="home-btn" src="images/css-images/house.png" alt="house-button -go to the home page"> </a>
-
-        <!-- Navigation line  -->
-        <div id="line"></div>
 
         <!-- The whole menu + close btn  -->
         <div id="mobileNav" class="container">
@@ -33,8 +28,12 @@
 
  <!-- The container for navigation   -->
             <div id="mobile-nav" class="container-content">
+
                     <a href="index.html"><img class="unicorn-logo-white" src="images/css-images/logo-white.png" alt="Logo"></a>
                 <ul class="menuList">
+
+                       <li><a href="home.html">Home</a> </li>
+
                     <li><a href="news.html">Events</a></li>
 
                    <li><a href="artwork.html">Artwork</a></li>
@@ -63,7 +62,7 @@
         <nav class="desktop-hide" id="desktop-nav">
                 <img class="unicorn-logo" src="images/css-images/logo-white.png" alt="Logo">
             <ul>
-                <li class="menu-li"><a id="home-hover" href="home.html"><img id="home-btn-desktop" src="images/css-images/house.png" alt="house button - go to the home page"></a></li>
+                <li class="menu-li"><a class="active" href="home.html">Home</a></li>
 
                 <li class="menu-li"><a href="news.html">Events</a></li>
 
@@ -91,12 +90,10 @@
 
             <div id="dots" class="border-line-bottom"></div>
 
+            <img class="homePic" src="images/lene/bigselfie.JPG" alt="the picture of the artist">
             <div class="homeContainer">
-                        <img class="homePic" src="images/lene/homepage.jpg" alt="the picture of the artist">
-                
+                    <img class="homePicMobile" src="images/lene/bigselfie.JPG" alt="the picture of the artist">
                     <p class="homeQuote">"When it comes to real strength, women are stronger than they think, and I want them to be aware of that."</p>
-               
-                
             </div>
 
             <iframe id="video" src="https://www.youtube-nocookie.com/embed/YqJuBRncVwg" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
