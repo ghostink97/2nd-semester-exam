@@ -354,8 +354,9 @@ span.active,
     #eventsList {
     grid-template-columns: auto auto;
     grid-row-gap: 50px;
-    }
 }
+    }
+
 
 /* /////////////// Navigation //////////////// */
 
@@ -630,7 +631,7 @@ span.active,
 
 
 
-@media only screen and (min-width: 220px) and (max-width: 360px){
+@media only screen and (min-width: 220px) and (max-width: 360px) {
 
     #name{
         padding-top: 290px;
@@ -951,7 +952,7 @@ section {
         margin-bottom: 3em;
     }
 
-    #video{
+    #video {
         margin-top: 5em;
         /*width:560px;
         height: 315px;*/
