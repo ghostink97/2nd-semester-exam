@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,139 +12,153 @@
 
 <body>
 
-        <div class="mainContainer">
+    <div class="mainContainer">
 
-    <header>
-      <!-- The Navigation - Mobile and Tablet version  -->
+        <header>
+            <!-- The Navigation - Mobile and Tablet version  -->
 
-        <!-- Inspired by www.w3schools.com ; Link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
+            <!-- Inspired by www.w3schools.com ; Link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
 
-        <!-- Hamburger menu  -->
-        <span id="hamburger-menu" onclick="openMobileNav()">&#9776; </span>
+            <!-- Hamburger menu  -->
+            <span id="hamburger-menu" onclick="openMobileNav()">&#9776; </span>
 
 
-        <!-- The whole menu + close btn  -->
-        <div id="mobileNav" class="container">
-            <a href="#" id="closebtnMobile" onclick="closeMobileNav()">&times;</a>
+            <!-- The whole menu + close btn  -->
+            <div id="mobileNav" class="container">
+                <a href="#" id="closebtnMobile" onclick="closeMobileNav()">&times;</a>
 
- <!-- The container for navigation   -->
-            <div id="mobile-nav" class="container-content">
+                <!-- The container for navigation   -->
+                <div id="mobile-nav" class="container-content">
 
-                    <a href="index.html"><img class="unicorn-logo-white" src="images/css-images/logo-white.png" alt="Logo"></a>
-                <ul class="menuList">
+                    <a href="index.html"><img class="unicorn-logo-white" src="images/css-images/logo-white.png"
+                            alt="Logo"></a>
+                    <ul class="menuList">
 
-                       <li><a href="home.html">Home</a> </li>
+                        <li><a href="home.html">Home</a> </li>
 
-                    <li><a href="news.html">Events</a></li>
+                        <li><a href="news.html">Events</a></li>
 
-                   <li><a href="artwork.html">Artwork</a></li>
+                        <li><a href="artwork.html">Artwork</a></li>
 
-                    <li>
-                        <a href="#" class="drop-submenu">Info <i class="fa fa-caret-down"></i></a>
-                        <ul class="submenu-Mobile">
-                            <li> <a href="bio.html">About me</a></li>
-                            <li> <a href="cv.html">CV</a></li>
-                            <li> <a href="exhibitions.html">Exhibitions</a>
-                            <li> <a href="lectures.html">Lectures</a></li>
+                        <li>
+                            <a href="#" class="drop-submenu">Info <i class="fa fa-caret-down"></i></a>
+                            <ul class="submenu-Mobile">
+                                <li> <a href="bio.html">About me</a></li>
+                                <li> <a href="cv.html">CV</a></li>
+                                <li> <a href="exhibitions.html">Exhibitions</a>
+                                <li> <a href="lectures.html">Lectures</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a id="shopM" href="#">Shop</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <!-- The Navigation -Desktop version  -->
+
+            <!-- Inspired by a video from youtube. Link: https://www.youtube.com/watch?v=zguFq71ZR4Y -->
+
+            <nav class="desktop-hide" id="desktop-nav">
+                <img class="unicorn-logo" src="images/css-images/logo-white.png" alt="Logo">
+                <ul>
+                    <li class="menu-li"><a href="home.html">Home</a></li>
+
+                    <li class="menu-li"><a href="news.html">Events</a></li>
+
+                    <li class="menu-li"> <a href="artwork.html">Artwork</a></li>
+
+                    <li class="menu-li">
+                        <a class="active" href="#">Info <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu-ul">
+                            <li class="dropdown-menu-li"> <a href="bio.html">About me</a></li>
+                            <li class="dropdown-menu-li"> <a href="cv.html">CV</a></li>
+                            <li class="dropdown-menu-li"> <a href="exhibitions.html">Exhibitions</a></li>
+                            <li class="dropdown-menu-li"> <a class="active" href="lectures.html">Lectures</a></li>
                         </ul>
                     </li>
 
-                    <li><a id="shopM" href="#">Shop</a></li>
+                    <li class="menu-li"> <a id="shop" href="#">Shop</a></li>
                 </ul>
-            </div>
-
-        </div>
+            </nav>
 
 
-        <!-- The Navigation -Desktop version  -->
+        </header>
 
-        <!-- Inspired by a video from youtube. Link: https://www.youtube.com/watch?v=zguFq71ZR4Y -->
+        <main class="backColor lecturesmain">
 
-        <nav class="desktop-hide" id="desktop-nav">
-                <img class="unicorn-logo" src="images/css-images/logo-white.png" alt="Logo">
-            <ul>
-                <li class="menu-li"><a href="home.html">Home</a></li>
+            <h1 class="lectures">Lectures</h1>
 
-                <li class="menu-li"><a href="news.html">Events</a></li>
+            <section class="lecturestext">
 
-                <li class="menu-li"> <a href="artwork.html">Artwork</a></li>
-
-                <li class="menu-li">
-                    <a class="active" href="#">Info <i class="fa fa-caret-down"></i></a>
-                    <ul class="dropdown-menu-ul">
-                        <li class="dropdown-menu-li"> <a href="bio.html">About me</a></li>
-                        <li class="dropdown-menu-li"> <a href="cv.html">CV</a></li>
-                        <li class="dropdown-menu-li"> <a href="exhibitions.html">Exhibitions</a></li>
-                        <li class="dropdown-menu-li"> <a class="active" href="lectures.html">Lectures</a></li>
-                    </ul>
-                </li>
-
-                <li class="menu-li"> <a id="shop" href="#">Shop</a></li>
-            </ul>
-        </nav>
+                <h2>My Flight Towards The Bird Woman</h2>
 
 
-    </header>
-    
-    <main class="backColor lecturesmain">
+                <p>I give lectures using Power Point Presentations. The lecture is in either Danish or English, and it
+                    lasts for about an hour. I talk about the journey towards The Bird Woman. She symbolizes a
+                    courageous woman, a woman with wings, a beak and sometimes claws as well.</p>
+                <p>In addition to this, I present my special techniques and describe my carving materials. If I have the
+                    time, I like to talk about the life cycle of narwhals, walruses and mammoths, along with their
+                    historic and mythological significance. An example would be: the connection between the unicorn and
+                    the narwhal.</p>
+                <p>During most of my stays abroad have I given lectures about my work.</p>
 
-    <h1 class="lectures">Lectures</h1>
-
-    <section class="lecturestext">
-
-     <h2>My Flight Towards The Bird Woman</h2>
-
-
-    <p>I give lectures using  Power Point Presentations. The lecture is in either Danish or English, and it lasts for about an hour. I talk about the journey towards The Bird Woman. She symbolizes a courageous woman, a woman with wings, a beak and sometimes claws as well.</p>
-    <p>In  addition to this, I present my special techniques and describe my carving materials. If I have the time, I like to talk about the life cycle of narwhals, walruses and mammoths, along with their historic and mythological significance. An example would be: the connection between the unicorn and the narwhal.</p>
-    <p>During most of my stays abroad have I given lectures about my work.</p>
-
-    </section>
+            </section>
 
 
-    <section class="lecturestext">
+            <section class="lecturestext">
 
-     <h2>The Bird Woman</h2>
-     <p>The Bird Woman is symbolizing a woman, who dares to spread out her wings and try to fly. Although she risks falling down and getting hurt, her wings are strong enough to carry her, and give her courage. There are many different kinds of Bird Women: There is the woman with dreams, the woman beginning to grow wings, and the woman with her wings kept close to her body. FInally, there is The Bird Woman who has spread out her wings. Ready to fly. The woman who dares. The development from woman to Bird Woman is a development that changes a woman internally. It's slow and scary. Sometimes it even hurts, but eventually, it's all worth it.</p>
-    </section>
+                <h2>The Bird Woman</h2>
+                <p>The Bird Woman is symbolizing a woman, who dares to spread out her wings and try to fly. Although she
+                    risks falling down and getting hurt, her wings are strong enough to carry her, and give her courage.
+                    There are many different kinds of Bird Women: There is the woman with dreams, the woman beginning to
+                    grow wings, and the woman with her wings kept close to her body. FInally, there is The Bird Woman
+                    who has spread out her wings. Ready to fly. The woman who dares. The development from woman to Bird
+                    Woman is a development that changes a woman internally. It's slow and scary. Sometimes it even
+                    hurts, but eventually, it's all worth it.</p>
+            </section>
 
-    <figure >
-     <img id="birdwoman" src="images/lene/birdwoman.png" alt="Bird Woman">
+            <figure>
+                <img id="birdwoman" src="images/lene/birdwoman.png" alt="Bird Woman">
 
-    </figure>
+            </figure>
 
 
 
- <!-- Go to top (button) -->
-             <!-- Used in previous projects -->
-            <button onclick="btnTopFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i></button>
-    
-    </main>
+            <!-- Go to top (button) -->
+            <!-- Used in previous projects -->
+            <button onclick="btnTopFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up fa-lg"
+                    aria-hidden="true"></i></button>
 
-    <footer>
+        </main>
+
+        <footer>
 
             <div class="footer1">
-                    <h1>Galleri Unicorn</h1>
-                    <p> Rørholmsgade13, kld.tv</p>
-                    <p> 1352 København K., Denmark</p>
-                    <p>Tue-Fri : 12:00-17:30 and by appointment</p>
-                </div>
-        
+                <h1>Galleri Unicorn</h1>
+                <p> Rørholmsgade13, kld.tv</p>
+                <p> 1352 København K., Denmark</p>
+                <p>Tue-Fri : 12:00-17:30 and by appointment</p>
+            </div>
+
             <div class="footer2">
                 <h1>Contact</h1>
                 <p>Lene Stevns Jensen</p>
                 <p>+45 61480505</p>
                 <p>lenest.jensen@gmail.com</p>
                 <a href="https://www.facebook.com/lene.stevnsjensen">
-                <img id="fb-icon" src="images/css-images/fb3.png"  alt="Facebook icon">
+                    <img id="fb-icon" src="images/css-images/fb3.png" alt="Facebook icon">
                 </a>
                 <img class="etsyIcon" src="images/css-images/etsy-lg.png" alt="Etsy icon">
             </div>
-        
-    </footer>
+
+        </footer>
 
     </div>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>

@@ -7,160 +7,168 @@
     <title>Lene Stevns Jensen | Exhibitions </title>
     <link rel="icon" href="icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="backColor">
 
-        <div class="mainContainer">
+    <div class="mainContainer">
 
-    <header>
-     <!-- The Navigation - Mobile and Tablet version  -->
+        <header>
+            <!-- The Navigation - Mobile and Tablet version  -->
 
-        <!-- Inspired by www.w3schools.com ; Link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
+            <!-- Inspired by www.w3schools.com ; Link:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_overlay -->
 
-        <!-- Hamburger menu  -->
-        <span id="hamburger-menu" onclick="openMobileNav()">&#9776; </span>
+            <!-- Hamburger menu  -->
+            <span id="hamburger-menu" onclick="openMobileNav()">&#9776; </span>
 
 
-        <!-- The whole menu + close btn  -->
-        <div id="mobileNav" class="container">
-            <a href="#" id="closebtnMobile" onclick="closeMobileNav()">&times;</a>
+            <!-- The whole menu + close btn  -->
+            <div id="mobileNav" class="container">
+                <a href="#" id="closebtnMobile" onclick="closeMobileNav()">&times;</a>
 
- <!-- The container for navigation   -->
-            <div id="mobile-nav" class="container-content">
+                <!-- The container for navigation   -->
+                <div id="mobile-nav" class="container-content">
 
-                    <a href="index.html"><img class="unicorn-logo-white" src="images/css-images/logo-white.png" alt="Logo"></a>
-                <ul class="menuList">
+                    <a href="index.html"><img class="unicorn-logo-white" src="images/css-images/logo-white.png"
+                            alt="Logo"></a>
+                    <ul class="menuList">
 
-                       <li><a href="home.html">Home</a> </li>
+                        <li><a href="home.html">Home</a> </li>
 
-                    <li><a href="news.html">Events</a></li>
+                        <li><a href="news.html">Events</a></li>
 
-                   <li><a href="artwork.html">Artwork</a></li>
+                        <li><a href="artwork.html">Artwork</a></li>
 
-                    <li>
-                        <a href="#" class="drop-submenu">Info <i class="fa fa-caret-down"></i></a>
-                        <ul class="submenu-Mobile">
-                            <li> <a href="bio.html">About me</a></li>
-                            <li> <a href="cv.html">CV</a></li>
-                            <li> <a href="exhibitions.html">Exhibitions</a>
-                            <li> <a href="lectures.html">Lectures</a></li>
+                        <li>
+                            <a href="#" class="drop-submenu">Info <i class="fa fa-caret-down"></i></a>
+                            <ul class="submenu-Mobile">
+                                <li> <a href="bio.html">About me</a></li>
+                                <li> <a href="cv.html">CV</a></li>
+                                <li> <a href="exhibitions.html">Exhibitions</a>
+                                <li> <a href="lectures.html">Lectures</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a id="shopM" href="#">Shop</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <!-- The Navigation -Desktop version  -->
+
+            <!-- Inspired by a video from youtube. Link: https://www.youtube.com/watch?v=zguFq71ZR4Y -->
+
+            <nav class="desktop-hide" id="desktop-nav">
+                <img class="unicorn-logo" src="images/css-images/logo-white.png" alt="Logo">
+                <ul>
+                    <li class="menu-li"><a href="home.html">Home</a></li>
+
+                    <li class="menu-li"><a href="news.html">Events</a></li>
+
+                    <li class="menu-li"> <a href="artwork.html">Artwork</a></li>
+
+                    <li class="menu-li">
+                        <a class="active" href="#">Info <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu-ul">
+                            <li class="dropdown-menu-li"> <a href="bio.html">About me</a></li>
+                            <li class="dropdown-menu-li"> <a href="cv.html">CV</a></li>
+                            <li class="dropdown-menu-li"> <a class="active" href="exhibitions.html">Exhibitions</a></li>
+                            <li class="dropdown-menu-li"> <a href="lectures.html">Lectures</a></li>
                         </ul>
                     </li>
 
-                    <li><a id="shopM" href="#">Shop</a></li>
+                    <li class="menu-li"> <a id="shop" href="#">Shop</a></li>
                 </ul>
-            </div>
-
-        </div>
+            </nav>
 
 
-        <!-- The Navigation -Desktop version  -->
+        </header>
 
-        <!-- Inspired by a video from youtube. Link: https://www.youtube.com/watch?v=zguFq71ZR4Y -->
+        <main class="backColor">
 
-        <nav class="desktop-hide" id="desktop-nav">
-                <img class="unicorn-logo" src="images/css-images/logo-white.png" alt="Logo">
-            <ul>
-                <li class="menu-li"><a href="home.html">Home</a></li>
+            <h1 class="exhibitions">Exhibitions</h1>
 
-                <li class="menu-li"><a href="news.html">Events</a></li>
+            <!--paragraph one-->
+            <section class="exhibitionsText1">
 
-                <li class="menu-li"> <a href="artwork.html">Artwork</a></li>
+                <h2>Selected Exhibitions</h2>
 
-                <li class="menu-li">
-                    <a class="active" href="#">Info <i class="fa fa-caret-down"></i></a>
-                    <ul class="dropdown-menu-ul">
-                        <li class="dropdown-menu-li"> <a href="bio.html">About me</a></li>
-                        <li class="dropdown-menu-li"> <a href="cv.html">CV</a></li>
-                        <li class="dropdown-menu-li"> <a class="active" href="exhibitions.html">Exhibitions</a></li>
-                        <li class="dropdown-menu-li"> <a href="lectures.html">Lectures</a></li>
-                    </ul>
-                </li>
+                <p>2015 The Kirsten Kjaer Museum.</p>
+                <p>2013 The Copenhagen Zoo.</p>
+                <p>2009 Fyrgaarden, Hundested.</p>
+                <p>2003 The Other Gallery, Banff, Canada.</p>
+                <p>1999 The Nordic Heritage Museum (now Nordic Museum)Seattle, USA.</p>
+                <p>1994 Aarhus Musikhus.</p>
+                <p>1990 The Midtsønderjyllands Museum, Gram Castle. </p>
 
-                <li class="menu-li"> <a id="shop" href="#">Shop</a></li>
-            </ul>
-        </nav>
+            </section>
 
+            <!--paragraph two-->
+            <section class="exhibitionsText2">
 
-    </header>
+                <h2>Other Exhibitions</h2>
 
-    <main class="backColor">
+                <p>2018 Egedal Town Hall. Det Ny Kastet, Thisted. Dronninglund Art Centre. Agger Sculpture Biennale.
+                    Brøndsalen, Frederiksberg.</p>
+                <p>2017 Sculpture exhibition, Galten. Copenhagen Town Hall. Brøndsalen, Frederiksberg. Farum Culture
+                    House.</p>
+                <p>2016 Kirkehavegaard, Alleroed. Gallery North. The Sculpture Biennale, Hollufgaard. Broendsalen,
+                    Frederiksberg. Birkelundgaard, Albertslund. Banegaarden, Aabenraa.</p>
+                <p>2015 The Sculpture Exhibition, Oelgod. Art, Oeksnehallen, Copenhagen. Pakhuset, Nykoebing Sjaelland.
+                </p>
+                <p>2014 Gimsinghoved. Sculpturfocus, Augustiana, Augustenborg. Dronninglund Art Centre.</p>
+                <p>2013 Poesi of the Elements, Oelgod. Aeglageret, Holbaek.</p>
+                <p>2012 Annaborg, Hilleroed. The Sculpture Biennale, The King's Garden. International Art Festival,
+                    Kaerteminde.</p>
+                <p>2011 Gallery Frida, Sweeden. Palaefloejen, Roskilde. Limfjoerden's censored exhibition</p>
+                <p>2010 The Johannes Larsen Museum, Kerteminde. The sculpture Biennale the King's Garden, Copenhagen.
+                </p>
+                <p>2009 Filosofgangen, Odense.</p>
+                <p>2008 The Oceanarium of the North Sea, Hirtshals.</p>
+                <p>2006 Yunnan Provincial Museum, China.</p>
+                <p>2004 The Round Tower, Copenhagen</p>
+                <p>2002 Kulturen Informativen Centar, Skopje, Macedonia</p>
+                <p>2001 Gallery Inuit, Aalborg</p>
+                <p>1998 Moesting's House, Copenhagen. Broendsalen, Frederiksberg.</p>
+                <p>1997 Gallery Krebsen, Copenhagen. The Danish Central Library, Flensborg, Germany</p>
+                <p>1996 Gallery Europe, Rungsted. Malmoe, Sweeden.</p>
+                <p>1994 Gallery Cobolt</p>
+                <p>1993 Skovhuset, Vaerloese</p>
+                <p>1992 Kulstof 92. The Round Tower, Copenhagen. The Baltic Countries.</p>
+                <p>1991 The Art- and Culture Center of South Jutland</p>
 
-        <h1 class="exhibitions">Exhibitions</h1>
+            </section>
 
-        <!--paragraph one-->
-        <section class="exhibitionsText1">
+            <!-- Go to top (button) -->
+            <!-- Used in previous projects -->
+            <button onclick="btnTopFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up fa-lg"
+                    aria-hidden="true"></i></button>
+        </main>
 
-            <h2>Selected Exhibitions</h2>
-
-            <p>2015 The Kirsten Kjaer Museum.</p>
-            <p>2013 The Copenhagen Zoo.</p>
-            <p>2009 Fyrgaarden, Hundested.</p>
-            <p>2003 The Other Gallery, Banff, Canada.</p>
-            <p>1999 The Nordic Heritage Museum (now Nordic Museum)Seattle, USA.</p>
-            <p>1994 Aarhus Musikhus.</p>
-            <p>1990 The Midtsønderjyllands Museum, Gram Castle. </p>
-
-        </section>
-
-        <!--paragraph two-->
-        <section class="exhibitionsText2">
-
-            <h2>Other Exhibitions</h2>
-
-            <p>2018 Egedal Town Hall. Det Ny Kastet, Thisted. Dronninglund Art Centre. Agger Sculpture Biennale. Brøndsalen, Frederiksberg.</p>
-            <p>2017 Sculpture exhibition, Galten. Copenhagen Town Hall. Brøndsalen, Frederiksberg. Farum Culture House.</p>
-            <p>2016 Kirkehavegaard, Alleroed. Gallery North. The Sculpture Biennale, Hollufgaard. Broendsalen, Frederiksberg. Birkelundgaard, Albertslund. Banegaarden, Aabenraa.</p>
-            <p>2015 The Sculpture Exhibition, Oelgod. Art, Oeksnehallen, Copenhagen. Pakhuset, Nykoebing Sjaelland.</p>
-            <p>2014 Gimsinghoved. Sculpturfocus, Augustiana, Augustenborg. Dronninglund Art Centre.</p>
-            <p>2013 Poesi of the Elements, Oelgod. Aeglageret, Holbaek.</p>
-            <p>2012 Annaborg, Hilleroed. The Sculpture Biennale, The King's Garden. International Art Festival, Kaerteminde.</p>
-            <p>2011 Gallery Frida, Sweeden. Palaefloejen, Roskilde. Limfjoerden's censored exhibition</p>
-            <p>2010 The Johannes Larsen Museum, Kerteminde. The sculpture Biennale the King's Garden, Copenhagen.</p>
-            <p>2009 Filosofgangen, Odense.</p>
-            <p>2008 The Oceanarium of the North Sea, Hirtshals.</p>
-            <p>2006 Yunnan Provincial Museum, China.</p>
-            <p>2004 The Round Tower, Copenhagen</p>
-            <p>2002 Kulturen Informativen Centar, Skopje, Macedonia</p>
-            <p>2001 Gallery Inuit, Aalborg</p>
-            <p>1998 Moesting's House, Copenhagen. Broendsalen, Frederiksberg.</p>
-            <p>1997 Gallery Krebsen, Copenhagen. The Danish Central Library, Flensborg, Germany</p>
-            <p>1996 Gallery Europe, Rungsted. Malmoe, Sweeden.</p>
-            <p>1994 Gallery Cobolt</p>
-            <p>1993 Skovhuset, Vaerloese</p>
-            <p>1992 Kulstof 92. The Round Tower, Copenhagen. The Baltic Countries.</p>
-            <p>1991 The Art- and Culture Center of South Jutland</p>
-
-        </section>
-
-    <!-- Go to top (button) -->
-             <!-- Used in previous projects -->
-            <button onclick="btnTopFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-up fa-lg" aria-hidden="true"></i></button>
-    </main>
-
-    <footer>
+        <footer>
 
             <div class="footer1">
-                    <h1>Galleri Unicorn</h1>
-                    <p> Rørholmsgade13, kld.tv</p>
-                    <p> 1352 København K., Denmark</p>
-                    <p>Tue-Fri : 12:00-17:30 and by appointment</p>
-                </div>
-        
+                <h1>Galleri Unicorn</h1>
+                <p> Rørholmsgade13, kld.tv</p>
+                <p> 1352 København K., Denmark</p>
+                <p>Tue-Fri : 12:00-17:30 and by appointment</p>
+            </div>
+
             <div class="footer2">
                 <h1>Contact</h1>
                 <p>Lene Stevns Jensen</p>
                 <p>+45 61480505</p>
                 <p>lenest.jensen@gmail.com</p>
                 <a href="https://www.facebook.com/lene.stevnsjensen">
-                <img id="fb-icon" src="images/css-images/fb3.png"  alt="Facebook icon">
+                    <img id="fb-icon" src="images/css-images/fb3.png" alt="Facebook icon">
                 </a>
                 <img class="etsyIcon" src="images/css-images/etsy-lg.png" alt="Etsy icon">
             </div>
 
-    </footer>
+        </footer>
 
     </div>
 

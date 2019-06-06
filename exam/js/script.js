@@ -49,6 +49,6 @@ function btnTopFunction() {
 }
 
 //logo on desktop
-document.querySelector(".unicorn-logo").addEventListener("click", function(){
+document.querySelector(".unicorn-logo").addEventListener("click", function () {
     window.open("index.html", "_self");
 });
