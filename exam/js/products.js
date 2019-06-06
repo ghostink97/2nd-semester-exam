@@ -9,6 +9,10 @@ const productLink = "http://wp.quickcocktails.dk/wp-json/wp/v2/";
 const catID = urlParms.get("cat");
 const modal = document.querySelector("#modal");
 
+document.querySelector("#productDetails button").addEventListener("click", function(){
+  window.open("https://www.etsy.com/", "_self");
+});
+
 function findCats() {
   fetch(productLink + "categories").then(e => e.json()).then(buildCats);
 

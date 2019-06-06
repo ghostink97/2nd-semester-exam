@@ -21,7 +21,7 @@ html {
 }
 
 header {
-    background-color: white;
+    background-color: var(--active--color);
 }
 
 /*LOGO ON DESKTOP*/
@@ -377,6 +377,7 @@ span.active,
     #hamburger-menu {
         font-size: 31px;
         cursor: pointer;
+        color: white;
     }
 
     .mobile {
@@ -412,6 +413,10 @@ span.active,
 
     .menuList {
         margin-top: 3em;
+    }
+
+    .menuList li {
+        list-style-type: none;
     }
 
     .container a:hover {
@@ -500,7 +505,6 @@ span.active,
     font-family: Helvetica, sans-serif;
     font-size: 16px;
     box-shadow: 0 3px 2px -2px gray;
-    background-color: #FF7C53;
     z-index: 98;
     height: 57.5px;
 }
