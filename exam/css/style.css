@@ -456,6 +456,7 @@ span.active,
 
     #modal {
         background-color: white;
+        overflow: scroll;
     }
 
     #modal article {
