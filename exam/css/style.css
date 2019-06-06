@@ -7,14 +7,10 @@
     padding: 0;
 }
 
-:root{
+:root {
     --main-color: white;
     --active--color: #FF7C53;
     --product-template-color: #212440;
-}
-
-.underline{
-    text-decoration: underline;
 }
 
 body,
@@ -29,29 +25,31 @@ header {
 }
 
 /*LOGO ON DESKTOP*/
-.unicorn-logo{
+.unicorn-logo {
     width: 35px;
     display: block;
-    margin-left: 1em;
+    margin-left: 1.5em;
     cursor: pointer;
     position: absolute;
 }
 
 /*LOGO ON MOBILE*/
-.unicorn-logo-white{
+.unicorn-logo-white {
     width: 40px;
     margin-left: 3px;
     cursor: pointer;
 }
 
 /* USED TO KEEP THE FOOTER AT THE BOTTOM OF THE PAGE. SRC: https://matthewjamestaylor.com/bottom-footer*/
-.mainContainer{
- min-height: 100vh; /* will cover the 100% of viewport */
- overflow: hidden;
- display: block;
- position: relative;
- padding-bottom: 300px; /* height of your footer */
- background-color: var(--main-color);
+.mainContainer {
+    min-height: 100vh;
+    /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 300px;
+    /* height of your footer */
+    background-color: var(--main-color);
 }
 
 /*  FOOTER DESKTOP VIEW */
@@ -102,19 +100,19 @@ footer p {
     text-align: left;
 }
 
-.footer2 a:link{
+.footer2 a:link {
     text-decoration: none;
 }
 
-.footer2 a:hover{
+.footer2 a:hover {
     text-decoration: none;
 }
 
-.footer2 a:active{
+.footer2 a:active {
     text-decoration: none;
 }
 
-.footer2 a:visited{
+.footer2 a:visited {
     text-decoration: none;
 }
 
@@ -293,6 +291,14 @@ span.active,
     object-position: center;
 }
 
+.carousel-title {
+    margin-top: 0.8em;
+}
+
+.carousel-address {
+    margin-top: 0.5em;
+}
+
 /* ////////// News Page /////////// */
 
 #news-page-title {
@@ -351,10 +357,10 @@ span.active,
 
 @media only screen and (min-width: 1300px) {
     #eventsList {
-    grid-template-columns: auto auto;
-    grid-row-gap: 50px;
-}
+        grid-template-columns: auto auto;
+        grid-row-gap: 50px;
     }
+}
 
 
 /* /////////////// Navigation //////////////// */
@@ -404,7 +410,7 @@ span.active,
         transition: 0.31s;
     }
 
-    .menuList{
+    .menuList {
         margin-top: 3em;
     }
 
@@ -433,7 +439,7 @@ span.active,
         display: none;
     }
 
-    .display-block > li {
+    .display-block>li {
         display: block;
     }
 
@@ -511,11 +517,11 @@ span.active,
     padding: 19px 20px;
 }
 
-#desktop-nav .menu-li .dropdown-menu-ul a{
+#desktop-nav .menu-li .dropdown-menu-ul a {
     color: var(--product-template-color);
 }
 
-#desktop-nav .menu-li .dropdown-menu-ul a:hover{
+#desktop-nav .menu-li .dropdown-menu-ul a:hover {
     color: var(--active--color);
 }
 
@@ -532,7 +538,7 @@ span.active,
     transition: all 0.5s;
 }
 
-#desktop-nav .dropdown-menu-ul .dropdown-menu-li .active{
+#desktop-nav .dropdown-menu-ul .dropdown-menu-li .active {
     color: var(--active--color);
 }
 
@@ -632,7 +638,7 @@ span.active,
 
 @media only screen and (min-width: 220px) and (max-width: 360px) {
 
-    #name{
+    #name {
         padding-top: 290px;
     }
 
@@ -768,7 +774,7 @@ section {
     margin-top: 3em;
 }
 
-    .lecturestext h2{
+.lecturestext h2 {
     color: var(--product-template-color);
 }
 
@@ -814,11 +820,11 @@ section {
     padding: 2em;
 }
 
-.homePic{
+.homePic {
     display: none;
 }
 
-.homePicMobile{
+.homePicMobile {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -955,7 +961,7 @@ section {
         margin-top: 5em;
         /*width:560px;
         height: 315px;*/
-        width:70%;
+        width: 70%;
         height: 500px;
     }
 
@@ -967,7 +973,7 @@ section {
         padding: inherit;
     }
 
-    .homePicMobile{
+    .homePicMobile {
         display: none;
     }
 
@@ -986,14 +992,14 @@ section {
         margin-top: 4em;
     }
 
-    .wrapper{
+    .wrapper {
         display: grid;
-        grid-template-columns:1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas: "text-area pic-area";
         padding: 1em;
     }
 
-    .biotext1{
+    .biotext1 {
         width: 500px;
         grid-area: text-area;
         line-height: 31.5px;
@@ -1004,9 +1010,9 @@ section {
         margin-top: 1.5em;
     }
 
-    .bioImage{
+    .bioImage {
         grid-area: pic-area;
-        width: 400px;
+        width: 300px;
         display: block;
         margin-left: 3em;
         margin-bottom: inherit;
@@ -1019,7 +1025,7 @@ section {
     }
 
     .exhibitionsText1 h2,
-    .exhibitionsText2 h2{
+    .exhibitionsText2 h2 {
         color: var(--product-template-color);
     }
 
@@ -1031,7 +1037,7 @@ section {
         width: 60%;
     }
 
-    .cv h2{
+    .cv h2 {
         color: var(--product-template-color);
     }
 
@@ -1079,7 +1085,7 @@ section {
     margin-right: 1em;
 }
 
-.imgWrapper{
+.imgWrapper {
     max-height: 500px;
     overflow: hidden;
 }
@@ -1115,7 +1121,7 @@ section {
 }
 
 #btn-wrapper {
-    margin-left: 43%;
+    text-align: center;
     margin-top: 2em;
 }
 
@@ -1155,7 +1161,7 @@ section {
     color: rgb(94, 94, 94);
     padding-top: 10em;
     padding-bottom: 5em;
-    background-color:var(--main-color);
+    background-color: var(--main-color);
 }
 
 #credits a {
@@ -1175,7 +1181,7 @@ section {
         transform: translate(-50%, 0%);
     }
 
-    .imgWrapper{
+    .imgWrapper {
         max-height: 310px;
     }
 
@@ -1196,18 +1202,18 @@ section {
         margin-top: 0em;
     }
 
-    #artmain{
+    #artmain {
         padding-left: 3em;
         padding-right: 3em;
     }
 }
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
-    .imgWrapper{
+    .imgWrapper {
         max-height: 350px;
     }
 
-    #products{
+    #products {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 1em;
