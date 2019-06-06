@@ -261,9 +261,8 @@ footer p {
     color: #fff;
 }
 
-.carousel-title {
+#slider-text {
     text-align: center;
-    margin-top: 1em;
 }
 
 .dot {
