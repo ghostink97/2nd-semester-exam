@@ -1,3 +1,5 @@
+// Used in one of the past projects ( Huset )
+
 let endpoint = "http://wp.quickcocktails.dk/wp-json/wp/v2/news?_embed";
 
 const carouselItem = document.querySelector("#carousel-item").content;
@@ -26,14 +28,12 @@ function show(events) {
                 const carouselImage = clone.querySelector(".carousel-image");
                 const carouselTitle = clone.querySelector(".carousel-title");
                 const carouselAddress = clone.querySelector(".carousel-address");
-                const carouselDate = clone.querySelector(".carousel-date");
 
                 carouselImage.src = event.slider_image.guid;
                 carouselTitle.innerHTML = event.news_title;
 
                 let start_dateFrom;
 
-                console.log(event.news_title, event.end_date);
                 if (event.start_date !== '0000-00-00') {
                     start_dateFrom = ' from ' + event.start_date;
                 } else {
@@ -116,7 +116,6 @@ function doCarousel() {
     }
 
     window.currentSlide = function (n) {
-        console.log(n);
         showSlides(slideIndex = n);
 
     }
@@ -124,7 +123,6 @@ function doCarousel() {
 
 
 function showSlides(n) {
-    console.log(n);
     var j;
     let dots = document.getElementsByClassName("dot");
     let slides = document.querySelectorAll(".mySlides");
@@ -148,8 +146,6 @@ function showSlides(n) {
     for (j = 0; j < dots.length; j++) {
         dots[j].className = dots[j].className.replace(" active", "");
     }
-
-    console.log(arraySlides, n);
 
     arraySlides[n].style.display = "block";
     dots[n].className += " active";
