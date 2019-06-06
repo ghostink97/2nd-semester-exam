@@ -1,8 +1,3 @@
-//enter button on landing page
-document.querySelector("#enterBtn").addEventListener("click", function(){
-    window.open("home.html", "_self");
-  } );
-
 // Mobile navigation
 
 const mq = window.matchMedia("(max-width: 719px)");
@@ -12,9 +7,8 @@ if (mq.matches) {
     const subMenu = document.querySelectorAll(".submenu-Mobile");
     const dropSubmenu = document.querySelectorAll(".drop-submenu");
 
-
     for (let i = 0; i < dropSubmenu.length; i++) {
-        dropSubmenu[i].addEventListener('click', function () {
+        dropSubmenu[i].addEventListener("click", function () {
             subMenu[i].classList.toggle("display-block");
         });
     }
