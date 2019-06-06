@@ -1097,6 +1097,9 @@ section {
 .prodtitle {
     margin-top: .5em;
     margin-left: .5em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .price {
